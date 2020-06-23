@@ -1,13 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
 const PREFIX = '/';
+var version = '1.0.2';
 
-var version = '1.0.1';
 
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
+
+client.user.setActivity("with anime tiddies") 
 })
+
 
 client.on('message', message=>{
 
@@ -16,9 +18,6 @@ client.on('message', message=>{
   switch(args[0]){
     case 'sup':
       message.channel.send('sup');
-      break;
-    case 'munga':
-      message.channel.send('https://www.youtube.com/channel/UCm6m7iJj2CSdcmfKAYtgVFg');
       break;
     case 'info':
       if(args[1] === 'version'){
@@ -35,4 +34,4 @@ client.on('message', message=>{
   }
 })
   
-client.login(process.env.token);
+client.login('NzE0MTE5NzQwOTcyNTk3MzE4.Xu5wGA.bVkN7rqD4Hfj74DjKkLs_7Idq_g');
