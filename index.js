@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = "NzE0MTE5NzQwOTcyNTk3MzE4.Xu5wGA.bVkN7rqD4Hfj74DjKkLs_7Idq_g";
 const PREFIX = '/';
-var version = '1.0.3';
 
 const fs = require('fs');
 client.commands = new Discord.Collection();
