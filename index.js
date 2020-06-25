@@ -16,7 +16,7 @@ for(const file of commandFiles){
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setActivity("with anime tiddies") 
+client.user.setActivity("/info") 
 })
 
 
@@ -25,12 +25,15 @@ client.on('message', message=>{
   let args = message.content.substring(PREFIX.length).split(" ");
 
   switch(args[0]){
+    case 'help':
+      client.commands.get('help').execute(message, args);
+      break; 
+    case 'info version':
+      client.commands.get('info').execute(message, args);
+      break;
     case 'sup':
       client.commands.get('sup').execute(message, args);
-      break;
-    case 'info':
-      client.commands.get('version').execute(message, args);
-      break; 
+      break;    
   }
 })
   
