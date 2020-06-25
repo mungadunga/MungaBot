@@ -21,6 +21,7 @@ client.on('ready', () =>{
     game: {
       name: '/info',
       type: "STREAMING",
+      url: "https://www.youtube.com/channel/UCm6m7iJj2CSdcmfKAYtgVFg"
     }
   }); 
 });
