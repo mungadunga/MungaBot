@@ -1,14 +1,20 @@
 module.exports = {
     name: 'info',
-    description: "bot info",
+    description: "information about the bot",
     execute(message, args){
-        var version = '1.0.4';
         
-            if(args[1] === 'version')
-        message.channel.send('Version ' + version)
-            if(args[1] === 'creator')
-        message.channel.send('Munga The Great') 
-            if(args[1] === 'release date')
-        message.channel.send('4/20/69')       
-    }    
-}   
+        message.channel.send(
+            `
+            Welcome to MungaBot!
+
+            /info : u just used this command no need to explain lmao
+            /version : displays current version of the bot
+            /creator : hmm who created almighty munga bot? 
+            /date : displays release date of munga bot
+   
+            Regular Commands:
+            /sup : say hello to munga bot! ( mostly used to test if the bot is online lol )
+            `
+        );    
+    }   
+}
