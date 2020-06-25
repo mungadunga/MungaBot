@@ -15,16 +15,9 @@ for(const file of commandFiles){
 
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setActivity('/info', { type: 'STREAMING', url: "https://www.twitch.tv/mungadunga_" }).catch(console.error);
 
-  client.user.setStatus('available') 
-  client.user.setPresence({
-    game: {
-      name: '/info',
-      type: "STREAMING",
-      url: "https://www.youtube.com/channel/UCm6m7iJj2CSdcmfKAYtgVFg"
-    }
-  }); 
-});
+})
 
 
 client.on('message', message=>{
