@@ -29,13 +29,13 @@ client.on('message', message=>{
       client.commands.get('info').execute(message, args);
       break; 
     case 'version':
-      client.commands.get('info version').execute(message, args);
+      client.commands.get('version').execute(message, args);
       break;
     case 'creator':
-      client.commands.get('info creator').execute(message, args);
+      client.commands.get('creator').execute(message, args);
       break;
     case 'date':
-      client.commands.get('info date').execute(message, args);  
+      client.commands.get('date').execute(message, args);  
       break;
     case 'sup':
       client.commands.get('sup').execute(message, args);

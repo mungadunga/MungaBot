@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'info creator',
+    name: 'creator',
     description: "displays creator of the bot",
     execute(message, args){ 
         
