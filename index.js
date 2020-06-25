@@ -16,8 +16,14 @@ for(const file of commandFiles){
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setActivity("/info") 
-})
+  client.user.setStatus('available') 
+  client.user.setPresence({
+    game: {
+      name: '/info',
+      type: "STREAMING",
+    }
+  }); 
+});
 
 
 client.on('message', message=>{
