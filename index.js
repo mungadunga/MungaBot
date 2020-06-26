@@ -15,10 +15,17 @@ for(const file of commandFiles){
 
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity('/info', { type: 'STREAMING', url: "https://www.twitch.tv/mungadunga_" }).catch(console.error);
+  client.user.setActivity('/info', { type: 'WATCHING' }).catch(console.error);
 
 })
 
+client.on('guildMemberAdd', member =>{
+  
+  const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
+  if(!channel) return;
+
+  channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`)
+});
 
 client.on('message', message=>{
 
