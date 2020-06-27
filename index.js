@@ -1,7 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = "NzE0MTE5NzQwOTcyNTk3MzE4.Xu5wGA.bVkN7rqD4Hfj74DjKkLs_7Idq_g";
-const PREFIX = '/';
+const prefix = '/';
+
+client.on('ready', () =>{
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setActivity('/info', { type: 'WATCHING' }).catch(console.error);
+
+})
 
 const fs = require('fs');
 client.commands = new Discord.Collection();
@@ -13,12 +19,6 @@ for(const file of commandFiles){
   client.commands.set(command.name, command);
 }
 
-client.on('ready', () =>{
-  console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity('/info', { type: 'WATCHING' }).catch(console.error);
-
-})
-
 client.on('guildMemberAdd', member =>{
   
   const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
@@ -29,7 +29,7 @@ client.on('guildMemberAdd', member =>{
 
 client.on('message', message=>{
 
-  let args = message.content.substring(PREFIX.length).split(" ");
+  let args = message.content.substring(prefix.length).split(" ");
 
   switch(args[0]){
     case 'info':
@@ -46,7 +46,10 @@ client.on('message', message=>{
       break;
     case 'sup':
       client.commands.get('sup').execute(message, args);
-      break;    
+      break;
+    case 'profile':   
+      client.commands.get('profile').execute(message, args);  
+      break; 
   }
 })
   

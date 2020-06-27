@@ -13,6 +13,7 @@ Welcome to MungaBot!
 /date : displays release date of munga bot
    
 /sup : say hello to munga bot! ( mostly used to test if the bot is online lol )
+/profile : 
 `
         );    
     }   
