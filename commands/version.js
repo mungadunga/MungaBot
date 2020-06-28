@@ -3,7 +3,7 @@ module.exports = {
     description: "displays current version of the bot",
     execute(message, args){
 
-        var version = '1.2.0'; 
+        var version = '2.0.0'; 
         message.channel.send('Version ' + version )
        
     }    

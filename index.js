@@ -50,6 +50,16 @@ client.on('message', message=>{
     case 'profile':   
       client.commands.get('profile').execute(message, args);  
       break; 
+    case 'kick':
+      client.commands.get('kick').execute(message, args);  
+      break;
+    case 'ban':
+      client.commands.get('ban').execute(message, args);  
+      break;
+    case 'howgay':
+      client.commands.get('howgay').execute(message, args);  
+      break;  
+
   }
 })
   
