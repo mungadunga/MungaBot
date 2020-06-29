@@ -28,38 +28,29 @@ client.on('guildMemberAdd', member =>{
 });
 
 client.on('message', message=>{
+  if(!message.content.startsWith(prefix) || message.author.bot) return;
 
-  let args = message.content.substring(prefix.length).split(" ");
+  const args = message.content.slice(prefix.length).split(/ +/);
+  const command = args.shift().toLowerCase();
 
-  switch(args[0]){
-    case 'info':
-      client.commands.get('info').execute(message, args);
-      break; 
-    case 'version':
+  if(command === 'info'){
+      client.commands.get('info').execute(message, args); 
+  } else if (command === 'version'){
       client.commands.get('version').execute(message, args);
-      break;
-    case 'creator':
+  } else if (command === 'creator'){
       client.commands.get('creator').execute(message, args);
-      break;
-    case 'date':
-      client.commands.get('date').execute(message, args);  
-      break;
-    case 'sup':
+  } else if (command === 'date'){
+      client.commands.get('date').execute(message, args);
+  } else if (command === 'sup'){
       client.commands.get('sup').execute(message, args);
-      break;
-    case 'profile':   
-      client.commands.get('profile').execute(message, args);  
-      break; 
-    case 'kick':
-      client.commands.get('kick').execute(message, args);  
-      break;
-    case 'ban':
-      client.commands.get('ban').execute(message, args);  
-      break;
-    case 'howgay':
-      client.commands.get('howgay').execute(message, args);  
-      break;  
-
+  } else if (command === 'profile'){
+      client.commands.get('profile').execute(message, args);
+  } else if (command === 'kick'){
+      client.commands.get('kick').execute(message, args);
+  } else if (command === 'ban'){
+      client.commands.get('ban').execute(message, args);
+  } else if (command === 'howgay'){
+      client.commands.get('howgay').execute(message, args); 
   }
 })
   
