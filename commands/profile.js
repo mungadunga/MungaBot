@@ -1,5 +1,6 @@
 module.exports = {
     name: 'profile',
+    aliases: ['p'],
     description: "player profile",
     execute(message, args){
 

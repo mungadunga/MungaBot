@@ -17,6 +17,7 @@ regular commands
 /sup : say hello to munga bot! ( mostly used to test if the bot is online lol )
 /profile : yay mungabot has profiles
 /howgay : why are you gae?
+/iq : how high is your iq?
 
 admin commands:
 /kick : kicks member

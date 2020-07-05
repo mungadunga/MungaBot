@@ -1,6 +1,7 @@
 module.exports = {
     name: 'ban',
     description: "bans a member",
+    guildOnly: true,
     execute(message, args){
 
         const prefix = '/'

@@ -10,7 +10,6 @@ module.exports = {
         .setColor(0x002EFF)
 
         message.channel.send(embed);
-
    
     }
 }
