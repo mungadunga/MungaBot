@@ -19,6 +19,14 @@ client.on('guildMemberAdd', member =>{
   channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`)
 });
 
+client.on('guildMemberRemove', member =>{
+  
+    const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
+    if(!channel) return;
+  
+    channel.send(`Blyat, ${member} has left the server`)
+});
+
 client.commands = new Discord.Collection();
 for(const file of commandFiles){
   const command = require(`./commands/${file}`);
@@ -52,8 +60,9 @@ client.on('message', message=>{
             client.commands.get('howgay').execute(message, args); 
         } else if (command === 'iq'){
             client.commands.get('iq').execute(message, args); 
+        } else if (command === 'poll'){
+            client.commands.get('poll').execute(message, args); 
         }
-
-}   )
+})
   
 client.login(token);

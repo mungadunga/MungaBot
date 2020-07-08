@@ -1,7 +1,6 @@
 module.exports = {
     name: 'kick',
     description: "kicks a member",
-    guildOnly: true,
     execute(message, args){
 
         let member = message.mentions.members.first();
