@@ -19,6 +19,7 @@ __regular commands:__
 /howgay : why are you gae?
 /iq : how high is your iq?
 /poll : create a simple yes or no poll!
+/meme : sends a meme from r/meme
     
 __admin commands:__
 /kick : kicks member

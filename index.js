@@ -11,6 +11,8 @@ client.on('ready', () =>{
 
 })
 
+//welcomes and goodbyes
+
 client.on('guildMemberAdd', member =>{
   
   const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
@@ -24,8 +26,10 @@ client.on('guildMemberRemove', member =>{
     const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
     if(!channel) return;
   
-    channel.send(`Blyat, ${member} has left the server`)
+    channel.send(`Blyat, ${user} has left the server`)
 });
+
+//commands 
 
 client.commands = new Discord.Collection();
 for(const file of commandFiles){
@@ -34,7 +38,7 @@ for(const file of commandFiles){
   client.commands.set(command.name, command);
 }
 
-client.on('message', message=>{
+client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
         const args = message.content.slice(prefix.length).split(/ +/);
@@ -50,8 +54,8 @@ client.on('message', message=>{
             client.commands.get('date').execute(message, args);
         } else if (command === 'sup'){
             client.commands.get('sup').execute(message, args);
-        } else if (command === 'profile'){
-            client.commands.get('profile').execute(message, args);
+        } else if (command === 'userinfo'){
+            client.commands.get('userinfo').execute(message, args);
         } else if (command === 'kick'){
             client.commands.get('kick').execute(message, args);
         } else if (command === 'ban'){
@@ -62,7 +66,11 @@ client.on('message', message=>{
             client.commands.get('iq').execute(message, args); 
         } else if (command === 'poll'){
             client.commands.get('poll').execute(message, args); 
+        } else if (command === 'meme'){
+            client.commands.get('meme').execute(message, args); 
         }
 })
+
+//client login
   
 client.login(token);
