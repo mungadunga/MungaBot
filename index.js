@@ -68,6 +68,8 @@ client.on('message', message => {
             client.commands.get('poll').execute(message, args); 
         } else if (command === 'meme'){
             client.commands.get('meme').execute(message, args); 
+        } else if (command === 'snipe'){
+            client.commands.get('snipe').execute(message, args); 
         }
 })
 

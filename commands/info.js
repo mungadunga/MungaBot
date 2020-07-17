@@ -15,11 +15,12 @@ __info commands:__
     
 __regular commands:__
 /sup : say hello to munga bot! ( mostly used to test if the bot is online lol )
-/profile : yay mungabot has profiles
+/userinfo : info about user
 /howgay : why are you gae?
 /iq : how high is your iq?
 /poll : create a simple yes or no poll!
 /meme : sends a meme from r/meme
+/snipe : try this command on someone! And if ur lucky, u may get a crit hit!
     
 __admin commands:__
 /kick : kicks member
