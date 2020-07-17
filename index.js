@@ -70,6 +70,10 @@ client.on('message', message => {
             client.commands.get('meme').execute(message, args); 
         } else if (command === 'snipe'){
             client.commands.get('snipe').execute(message, args); 
+        } else if (command === 'invite'){
+            client.commands.get('invite').execute(message, args); 
+        } else if (command === 'server'){
+            client.commands.get('server').execute(message, args); 
         }
 })
 

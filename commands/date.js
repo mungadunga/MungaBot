@@ -3,7 +3,14 @@ module.exports = {
     description: "displays release date of the bot",
     execute(message, args){ 
 
-        message.channel.send('munga bot was created proudly on 4/20/69');
+        const Discord = require('discord.js')
+        const embed = new Discord.MessageEmbed()
+
+        .setColor(0x7A7B80)
+        .setTitle("When was almighty MungaBot created???")
+        .setDescription("Munga bot was proudly created on 4/20/69");
+
+        message.channel.send(embed);
 
     }    
 }   
