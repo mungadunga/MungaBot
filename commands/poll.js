@@ -1,9 +1,9 @@
 module.exports = {
     name: 'poll',
-    description: "idk",
+    description: "create a simple yes or no poll!",
     execute(message, args){
 
-        const Discord = require('discord.js')
+        const Discord = require('discord.js');
 
         function emoji (id) {
             return client.emojis.get(id).toString();

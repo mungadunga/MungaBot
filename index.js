@@ -15,18 +15,18 @@ client.on('ready', () =>{
 
 client.on('guildMemberAdd', member =>{
   
-  const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
+  const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
   if(!channel) return;
 
-  channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`)
+  channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`);
 });
 
 client.on('guildMemberRemove', member =>{
   
-    const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome")
+    const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
     if(!channel) return;
   
-    channel.send(`Blyat, ${user} has left the server`)
+    channel.send(`Blyat, ${member.username} has left the server`);
 });
 
 //commands 
@@ -74,6 +74,8 @@ client.on('message', message => {
             client.commands.get('invite').execute(message, args); 
         } else if (command === 'server'){
             client.commands.get('server').execute(message, args); 
+        } else if (command === 'number'){
+            client.commands.get('number').execute(message, args); 
         }
 })
 

@@ -1,9 +1,9 @@
 module.exports = {
     name: 'creator',
-    description: "displays creator of the bot",
+    description: "hmm who created almighty munga bot? ",
     execute(message, args){ 
 
-        const Discord = require('discord.js')
+        const Discord = require('discord.js');
         const embed = new Discord.MessageEmbed()
 
         .setColor(0x7A7B80)

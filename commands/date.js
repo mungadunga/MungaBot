@@ -1,9 +1,9 @@
 module.exports = {
     name: 'date',
-    description: "displays release date of the bot",
+    description: "displays release date of munga bot",
     execute(message, args){ 
 
-        const Discord = require('discord.js')
+        const Discord = require('discord.js');
         const embed = new Discord.MessageEmbed()
 
         .setColor(0x7A7B80)

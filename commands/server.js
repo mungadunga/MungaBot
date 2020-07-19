@@ -1,6 +1,6 @@
 module.exports = {
     name: 'server',
-    description: "idk",
+    description: "sends the link of the bot's official server",
     execute(message, args){
 
         const Discord = require('discord.js')
@@ -9,7 +9,7 @@ module.exports = {
         .setColor(0x7A7B80)
         .setTitle("Servers that you might like:")
         .addField("MungaBot's official server:", "https://discord.gg/QSBEwSe")
-        .addField("MungaDunga's server:", "https://discord.gg/KdabcRS")
+        .addField("MungaDunga's server:", "https://discord.gg/KdabcRS");
         
         message.channel.send(embed);
     }

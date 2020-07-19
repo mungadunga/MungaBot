@@ -1,9 +1,9 @@
 module.exports = {
         name: 'info',
-        description: "information about the bot",
+        description: "full list of commands",
         execute(message, args){
 
-                const Discord = require('discord.js')
+                const Discord = require('discord.js');
                 const embed = new Discord.MessageEmbed()
 
                 .setColor(0x7A7B80)
@@ -16,7 +16,7 @@ __info commands:__
 /version : displays current version of the bot
 /creator : hmm who created almighty munga bot? 
 /date : displays release date of munga bot
-/server : sends the link to some servers ( including the bot's official one )
+/server : sends the link of the bot's official server
 /invite : invite mungabot to your server!
                              
 __regular commands:__
@@ -27,6 +27,7 @@ __regular commands:__
 /poll : create a simple yes or no poll!
 /meme : sends a meme from r/meme
 /snipe : try this command on someone! And if ur lucky, u may get a crit hit!
+/number : generates a random number between 1 and 5
                              
 __admin commands:__
 /kick : kicks member
@@ -34,9 +35,9 @@ __admin commands:__
 (do not use these commands on yourself it actually works lol)
 `
                         
-                )
+                );
                         
-                message.channel.send(embed)
+                message.channel.send(embed);
   
         }   
 }

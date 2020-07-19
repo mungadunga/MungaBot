@@ -1,6 +1,6 @@
 module.exports = {
     name: 'meme',
-    description: "send a meme",
+    description: "sends a meme from r/meme",
     execute(message, args){
 
         const Discord = require('discord.js');
