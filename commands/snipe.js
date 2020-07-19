@@ -14,7 +14,7 @@ module.exports = {
 
             const embed = new Discord.MessageEmbed()
             .setColor(0xFF0000)
-            .addField('Sniping ' + user.toString() + '...', "You sucessfully snip- _**Wait, WHAT?!**_ " + user.toString() + " has a reverse card! You got sniped back sorry for that bro");
+            .addField('Sniping...', "You sucessfully snip- _**Wait, WHAT?!**_ " + user.toString() + " has a reverse card! You got sniped back sorry for that bro");
 
             let msg = message.channel.send(embed).then(messageReaction => {
                 messageReaction.react('696302147653861387');
@@ -24,7 +24,7 @@ module.exports = {
 
             const embed = new Discord.MessageEmbed()
             .setColor(0x00FF00)
-            .addField('Sniping ' + user.toString() + '...', "You sucessfully sniped " + user.toString());
+            .addField('Sniping...', "You sucessfully sniped " + user.toString());
 
             let msg = message.channel.send(embed).then(messageReaction => {
                 messageReaction.react('700762868278231070');
@@ -34,7 +34,7 @@ module.exports = {
 
             const embed = new Discord.MessageEmbed()
             .setColor(0x0000FF)
-            .addField('Sniping ' + user.toString() + '...', "YIKES " + message.author.username + " scored a critical hit on " + user.toString() + "!");
+            .addField('Sniping...', "YIKES " + message.author.username + " scored a critical hit on " + user.toString() + "!");
 
             let msg = message.channel.send(embed).then(messageReaction => {
                 messageReaction.react('730453087046860811');
