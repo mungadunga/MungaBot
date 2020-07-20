@@ -26,7 +26,7 @@ client.on('guildMemberRemove', member =>{
     const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
     if(!channel) return;
   
-    channel.send(`Blyat, ${member.username} has left the server`);
+    channel.send(`Blyat, ${member.user.tag} has left the server`);
 });
 
 //commands 
@@ -76,6 +76,8 @@ client.on('message', message => {
             client.commands.get('server').execute(message, args); 
         } else if (command === 'number'){
             client.commands.get('number').execute(message, args); 
+        } else if (command === 'weather'){
+            client.commands.get('weather').execute(message, args); 
         }
 })
 

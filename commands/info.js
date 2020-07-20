@@ -28,6 +28,7 @@ __regular commands:__
 /meme : sends a meme from r/meme
 /snipe : try this command on someone! And if ur lucky, u may get a crit hit!
 /number : generates a random number between 1 and 5
+/weather : correct usage: /weather <insert city name here>
                              
 __admin commands:__
 /kick : kicks member

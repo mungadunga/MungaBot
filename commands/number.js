@@ -7,7 +7,7 @@ module.exports = {
 
         const embed = new Discord.MessageEmbed()
         .setColor(0x7A7B80) 
-        .addField('Random number generator', Math.round(Math.random() * 5));
+        .addField('Random number generator', Math.ceil(Math.random() * 5));
 
         message.channel.send(embed);
     }
