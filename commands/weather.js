@@ -1,6 +1,6 @@
 module.exports = {
     name: 'weather',
-    description: "correct usage: /weather <insert city name here>",
+    description: "use /weather and add a city name after the command to get the weather of that city!",
     execute(message, args){
 
         const Discord = require('discord.js');
@@ -9,11 +9,10 @@ module.exports = {
 
         if (message.content.startsWith(prefix + 'weather')){
             weather.find({search: args[0], degreeType: 'C'}, function(err, result){
-                if (err) message.channel.send(err);
+                if (err) message.channel.send('bro u gotta type a city name after `/weather`, it makes sense right?');
+                if(!args[0]) return;
 
-                if (result === undefined || result.length === 0){
-                    message.channel.send('please enter a valid location')
-                }
+                if (result === undefined || result.length === 0) return message.channel.send("i think u mispelled " + message.content + ", please try again");
 
                 var current = result[0].current;
                 var location =  result[0].location;
@@ -28,7 +27,8 @@ module.exports = {
                 .addField('Temperature', `${current.temperature} Degrees`, true)
                 .addField('Feels Like', `${current.feelslike} Degrees`, true)
                 .addField('Winds', current.winddisplay, true)
-                .addField('Humidity', `${current.humidity}%`, true);
+                .addField('Humidity', `${current.humidity}%`, true)
+                .setTimestamp();
 
                 message.channel.send(embed);
             });

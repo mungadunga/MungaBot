@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = "NzE0MTE5NzQwOTcyNTk3MzE4.Xu5wGA.bVkN7rqD4Hfj74DjKkLs_7Idq_g";
 const prefix = '/';
+
 const fs = require('fs');
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
@@ -31,10 +31,11 @@ client.on('guildMemberRemove', member =>{
 
 //commands 
 
+const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 client.commands = new Discord.Collection();
+
 for(const file of commandFiles){
   const command = require(`./commands/${file}`);
-
   client.commands.set(command.name, command);
 }
 
@@ -72,12 +73,22 @@ client.on('message', message => {
             client.commands.get('snipe').execute(message, args); 
         } else if (command === 'invite'){
             client.commands.get('invite').execute(message, args); 
-        } else if (command === 'server'){
-            client.commands.get('server').execute(message, args); 
+        } else if (command === 'discord'){
+            client.commands.get('discord').execute(message, args); 
         } else if (command === 'number'){
             client.commands.get('number').execute(message, args); 
         } else if (command === 'weather'){
             client.commands.get('weather').execute(message, args); 
+        } else if (command === 'insult'){
+            client.commands.get('insult').execute(message, args); 
+        } else if (command === 'youtube'){
+            client.commands.get('youtube').execute(message, args); 
+        } else if (command === 'twitter'){
+            client.commands.get('twitter').execute(message, args); 
+        } else if (command === 'instagram'){
+            client.commands.get('instagram').execute(message, args); 
+        } else if (command === 'discord'){
+            client.commands.get('discord').execute(message, args); 
         }
 })
 

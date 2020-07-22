@@ -11,7 +11,8 @@ module.exports = {
         .addField(message.author.username + " 's ID", message.author.id)
         .addField('Current Server', message.guild.name)
         .setColor(0x002EFF)
-        .setThumbnail(message.author.displayAvatarURL());
+        .setThumbnail(message.author.displayAvatarURL())
+        .setTimestamp();
 
         message.channel.send(embed);
     }

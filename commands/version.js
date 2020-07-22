@@ -3,12 +3,13 @@ module.exports = {
     description: "displays current version of the bot",
     execute(message, args){
 
-        var version = '2.3.0'; 
+        var version = '3.0.0'; 
         const Discord = require('discord.js')
 
         const embed = new Discord.MessageEmbed()
         .setColor(0x7A7B80)
-        .setTitle('Version ' + version );
+        .addField("MungaBot's current version:", "Version " + version)
+        .setTimestamp();
 
         message.channel.send(embed);
        
