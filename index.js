@@ -26,7 +26,7 @@ client.on('guildMemberRemove', member =>{
     const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
     if(!channel) return;
   
-    channel.send(`Blyat, ${member.user.tag} has left the server`);
+    channel.send(`Blyat, ${member.username} has left the server`);
 });
 
 //commands 
@@ -89,8 +89,10 @@ client.on('message', message => {
             client.commands.get('instagram').execute(message, args); 
         } else if (command === 'discord'){
             client.commands.get('discord').execute(message, args); 
+        } else if (command === 'dm'){
+            client.commands.get('dm').execute(message, args); 
         }
-})
+});
 
 //client login
   

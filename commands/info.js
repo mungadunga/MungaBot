@@ -29,6 +29,7 @@ __regular commands:__
 /number : generates a random number between 1 and 5
 /weather : use /weather and add a city name after the command to get the weather of that city!
 /insult : do not try to insult mungabot... and do not prepare a comeback cuz ur about to get smashed...
+/dm : dm someone using mungabot!
                              
 __admin commands:__
 /kick : kicks member
