@@ -9,7 +9,7 @@ module.exports = {
         .setColor(0x7A7B80)
         .setTitle("When was almighty MungaBot created???")
         .setDescription("Munga bot was proudly created on 4/20/69");
-
+        
         message.channel.send(embed);
 
     }    

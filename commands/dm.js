@@ -5,6 +5,8 @@ module.exports = {
 
         const Discord = require('discord.js');
         let user = message.mentions.members.first();
+
+        if(!args[0]) return message.channel.send('Proper usage: /dm <@user>');
         
         user.send(args.join(' '));
         message.delete({timeout: 100});

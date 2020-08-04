@@ -17,6 +17,8 @@ __info commands:__
 /creator : hmm who created almighty munga bot? 
 /date : displays release date of munga bot
 /invite : invite mungabot to your server!
+
+/update : ( can only be used by munga )
                              
 __regular commands:__
 /sup : say hello to munga bot! ( mostly used to test if the bot is online lol )
