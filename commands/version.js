@@ -3,7 +3,7 @@ module.exports = {
     description: "displays current version of the bot",
     execute(message, args){
 
-        var version = '4.1.0'; 
+        var version = '4.1.1'; 
         const Discord = require('discord.js');
 
         const embed = new Discord.MessageEmbed()
