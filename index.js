@@ -110,6 +110,8 @@ client.on('message', message => {
         client.commands.get('dm').execute(message, args); 
     } else if (command === 'update'){
         client.commands.get('update').execute(message, args); 
+    } else if (command === 'clear'){
+        client.commands.get('clear').execute(message, args); 
     }
 
     //helpcommands
@@ -160,6 +162,8 @@ client.on('message', message => {
         client.commands.get('info-weather').execute(message, args); 
     } else if (helpcommand === 'info-youtube'){
         client.commands.get('info-youtube').execute(message, args); 
+    } else if (helpcommand === 'info-clear'){
+        client.commands.get('info-clear').execute(message, args); 
     }
 });
 

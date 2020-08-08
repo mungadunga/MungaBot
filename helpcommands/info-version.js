@@ -8,6 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Version command", "Shows MungaBot's current version")
+        .addField("Usage:", "`/version`")
         .setTimestamp();
         
         message.channel.send(embed);

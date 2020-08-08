@@ -8,6 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Date command", "Displays release date of MungaBot!")
+        .addField("Usage:", "`/date`")
         .setTimestamp();
         
         message.channel.send(embed);

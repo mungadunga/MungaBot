@@ -7,7 +7,8 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         .setColor(0x7A7B80)
-        .addField("Weather command", "You can check the weather in your city by using MungaBot! Usuage: `/weather` <city> ( make sure to write it correctly )")
+        .addField("Weather command", "You can check the weather in your city by using MungaBot!")
+        .addField("Usage:", "`/weather` <city> ( make sure to write it correctly )")
         .setTimestamp();
         
         message.channel.send(embed);

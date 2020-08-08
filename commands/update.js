@@ -4,9 +4,8 @@ module.exports = {
     execute(message, args){
 
         const Discord = require('discord.js');
-        const client = new Discord.Client();
         
-        var version = '4.0.0'; 
+        var version = '4.1.0'; 
 
         //embed
 

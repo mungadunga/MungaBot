@@ -8,6 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Insult command", "Do not mess with me, i have the greatest roasts of the century")
+        .addField("Usage:", "`/insult`")
         .setTimestamp();
         
         message.channel.send(embed);

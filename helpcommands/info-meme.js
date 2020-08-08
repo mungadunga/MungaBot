@@ -8,6 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Meme command", "Sends a meme from r/meme")
+        .addField("Usage:", "`/meme`")
         .setTimestamp();
         
         message.channel.send(embed);

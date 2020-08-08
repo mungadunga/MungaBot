@@ -9,9 +9,9 @@ module.exports = {
                 .setColor(0x7A7B80)
                 .setTitle("Welcome to MungaBot!")
                 .setDescription("To know more about a certain command, use /info - <command name> ( for example `/info-sup` )")
-                .addField("**Full list of commands**", "`/info`, `/version`, `/creator`, `/date`, `/invite`, `/sup`, `/userinfo`, `/howgay`, `/iq`, `/poll`, `/meme`, `/snipe`, `/number`, `/weather`, `/insult`, `/dm`")
-                .addField("**Admin commands**", "`/kick`, `/ban` (do not use these commands on yourself it actually works lol)")
-                .addField("**Follow mungadunga on social media!**", "`/youtube`, `/twitter`, `/instagram`, `/discord`");
+                .addField("Full list of commands", "`/info`, `/version`, `/creator`, `/date`, `/invite`, `/sup`, `/userinfo`, `/howgay`, `/iq`, `/poll`, `/meme`, `/snipe`, `/number`, `/weather`, `/insult`, `/dm`")
+                .addField("Admin commands", "`/kick`, `/ban`, `/clear`")
+                .addField("Follow mungadunga on social media!", "`/youtube`, `/twitter`, `/instagram`, `/discord`");
                         
                 message.channel.send(embed);
   

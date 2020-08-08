@@ -8,6 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Twitter command", "Sends the link to Munga's twitter")
+        .addField("Usage:", "`/twitter`")
         .setTimestamp();
         
         message.channel.send(embed);
