@@ -4,12 +4,12 @@ module.exports = {
     description: "clear messages",
     execute(message, args){ 
 
+        let member = message.author
+
         if (!message.member.hasPermission(['ADMINISTRATOR'])) {
-            message.channel.send("Sorry bro you cannot delete messages, you need the ADMINISTRATOR permission");
-        } else if (member.hasPermission(['ADMINISTRATOR'])) { 
-            message.channel.bulkDelete(args[1]);
-            if(!args[1]) return message.reply('Proper usage: `/clear` <number>') 
+            message.reply("You don't have the ADMINISTRATOR permission, sorry for that bro")
+        } else {
+            message.channel.bulkDelete(args.join(' '));
         }
-    
     }    
 }   
