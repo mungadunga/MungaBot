@@ -12,9 +12,8 @@ module.exports = {
             } else if (member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS', 'ADMINISTRATOR'])) {
                 message.reply("You cannont kick this member");
             }
-        })
+        });
     }
-
 }
 
 
