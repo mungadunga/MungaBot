@@ -9,16 +9,16 @@ client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
   client.user.setActivity('/info', { type: 'WATCHING' }).catch(console.error);
 
-})
+});
 
 //welcomes and goodbyes
 
 client.on('guildMemberAdd', member =>{
   
-  const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
-  if(!channel) return;
+    const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
+    if(!channel) return;
 
-  channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`);
+    channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`);
 });
 
 client.on('guildMemberRemove', member =>{
@@ -36,8 +36,8 @@ client.on('guildMemberRemove', member =>{
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 client.commands = new Discord.Collection();
 for(const file of commandFiles){
-  const command = require(`./commands/${file}`);
-  client.commands.set(command.name, command);
+    const command = require(`./commands/${file}`);
+    client.commands.set(command.name, command);
 }
 
 //helpcommands folder
@@ -112,6 +112,8 @@ client.on('message', message => {
         client.commands.get('update').execute(message, args); 
     } else if (command === 'clear'){
         client.commands.get('clear').execute(message, args); 
+    } else if (command === 'say'){
+        client.commands.get('say').execute(message, args); 
     }
 
     //helpcommands
@@ -164,6 +166,8 @@ client.on('message', message => {
         client.commands.get('info-youtube').execute(message, args); 
     } else if (helpcommand === 'info-clear'){
         client.commands.get('info-clear').execute(message, args); 
+    } else if (helpcommand === 'info-say'){
+        client.commands.get('info-say').execute(message, args); 
     }
 });
 
