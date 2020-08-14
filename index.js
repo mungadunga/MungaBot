@@ -114,7 +114,12 @@ client.on('message', message => {
         client.commands.get('clear').execute(message, args); 
     } else if (command === 'say'){
         client.commands.get('say').execute(message, args); 
+    } else if (command === 'quiz'){
+        client.commands.get('quiz').execute(message, args); 
+    } else if (command === 'online'){
+        client.commands.get('online').execute(message, args); 
     }
+
 
     //helpcommands
 
@@ -168,6 +173,10 @@ client.on('message', message => {
         client.commands.get('info-clear').execute(message, args); 
     } else if (helpcommand === 'info-say'){
         client.commands.get('info-say').execute(message, args); 
+    } else if (helpcommand === 'info-quiz'){
+        client.commands.get('info-quiz').execute(message, args); 
+    } else if (helpcommand === 'info-online'){
+        client.commands.get('info-online').execute(message, args); 
     }
 });
 
