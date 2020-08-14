@@ -118,6 +118,8 @@ client.on('message', message => {
         client.commands.get('quiz').execute(message, args); 
     } else if (command === 'online'){
         client.commands.get('online').execute(message, args); 
+    } else if (command === 'patreon'){
+        client.commands.get('patreon').execute(message, args); 
     }
 
 
@@ -177,6 +179,8 @@ client.on('message', message => {
         client.commands.get('info-quiz').execute(message, args); 
     } else if (helpcommand === 'info-online'){
         client.commands.get('info-online').execute(message, args); 
+    } else if (helpcommand === 'info-patreon'){
+        client.commands.get('info-patreon').execute(message, args); 
     }
 });
 
