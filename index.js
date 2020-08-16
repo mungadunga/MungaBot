@@ -120,6 +120,8 @@ client.on('message', message => {
         client.commands.get('online').execute(message, args); 
     } else if (command === 'patreon'){
         client.commands.get('patreon').execute(message, args); 
+    } else if (command === 'serverinfo'){
+        client.commands.get('serverinfo').execute(message, args); 
     }
 
 
@@ -173,14 +175,16 @@ client.on('message', message => {
         client.commands.get('info-youtube').execute(message, args); 
     } else if (helpcommand === 'info-clear'){
         client.commands.get('info-clear').execute(message, args); 
-    } else if (helpcommand === 'info-say'){
-        client.commands.get('info-say').execute(message, args); 
+    } else if (helpcommand === 'info-repeat'){
+        client.commands.get('info-repeat').execute(message, args); 
     } else if (helpcommand === 'info-quiz'){
         client.commands.get('info-quiz').execute(message, args); 
     } else if (helpcommand === 'info-online'){
         client.commands.get('info-online').execute(message, args); 
     } else if (helpcommand === 'info-patreon'){
         client.commands.get('info-patreon').execute(message, args); 
+    } else if (helpcommand === 'info-serverinfo'){
+        client.commands.get('info-serverinfo').execute(message, args); 
     }
 });
 

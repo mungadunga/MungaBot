@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'say',
-    description: "say command",
+    name: 'repeat',
+    description: "repeat command",
     execute(message, args){
         message.channel.send(args.join(' '));
         message.delete({timeout: 1});
