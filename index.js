@@ -112,8 +112,8 @@ client.on('message', message => {
         client.commands.get('update').execute(message, args); 
     } else if (command === 'clear'){
         client.commands.get('clear').execute(message, args); 
-    } else if (command === 'say'){
-        client.commands.get('say').execute(message, args); 
+    } else if (command === 'repeat'){
+        client.commands.get('repeat').execute(message, args); 
     } else if (command === 'quiz'){
         client.commands.get('quiz').execute(message, args); 
     } else if (command === 'online'){
@@ -122,8 +122,9 @@ client.on('message', message => {
         client.commands.get('patreon').execute(message, args); 
     } else if (command === 'serverinfo'){
         client.commands.get('serverinfo').execute(message, args); 
-    }
-
+    } else if (command === 'reddit'){
+        client.commands.get('reddit').execute(message, args); 
+    } 
 
     //helpcommands
 
@@ -185,6 +186,8 @@ client.on('message', message => {
         client.commands.get('info-patreon').execute(message, args); 
     } else if (helpcommand === 'info-serverinfo'){
         client.commands.get('info-serverinfo').execute(message, args); 
+    } else if (helpcommand === 'info-reddit'){
+        client.commands.get('info-reddit').execute(message, args); 
     }
 });
 

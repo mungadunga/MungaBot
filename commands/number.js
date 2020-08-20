@@ -4,11 +4,26 @@ module.exports = {
     execute(message, args){
 
         const Discord = require('discord.js');
+        let randomnumber = Math.ceil(Math.random() * args.join(' '))
 
-        const embed = new Discord.MessageEmbed()
-        .setColor(0x7A7B80) 
-        .addField('Random number between 1 and ' + args.join(' '), Math.ceil(Math.random() * args.join(' ')));
+        if(randomnumber !== randomnumber){
 
-        message.channel.send(embed);
+            const embed2 = new Discord.MessageEmbed()
+    
+            .setColor(0xFF0000)
+            .addField("Correct usage:", "`/number` <number>")
+            .setFooter("For more info use `/info-number`");
+
+            message.channel.send(embed2)
+
+        } else if( randomnumber > 0 ){
+
+            const embed = new Discord.MessageEmbed()
+            .setColor(0x7A7B80) 
+            .addField('Random number between 1 and ' + args.join(' '), randomnumber);
+
+            message.channel.send(embed);
+            
+        }
     }
 }

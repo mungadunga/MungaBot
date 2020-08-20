@@ -13,7 +13,7 @@ module.exports = {
                 .addField("Regular Commands", "`/sup`, `/howgay`, `/iq`, `/insult`, `/repeat`, `/online`")
                 .addField("Best Commands", "`/quiz`, `/dm`, `/weather`, `/number`, `/snipe`, `/meme`, `/poll`")
                 .addField("Admin commands", "`/kick`, `/ban`, `/clear`")
-                .addField("Follow mungadunga on social media!", "`/youtube`, `/twitter`, `/instagram`, `/discord`")
+                .addField("Follow mungadunga on social media!", "`/youtube`, `/twitter`, `/instagram`, `/discord`, `/reddit`")
                 .addField("Support us!", "`/patreon`");
                         
                 message.channel.send(embed);

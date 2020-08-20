@@ -10,5 +10,21 @@
 	{
 		"question": "do u have a big pp?",
 		"answers": ["no"]
+	},
+	{
+		"question": "What is the capital of Brazil?",
+		"answers": ["BRAZILIA", "Brazilia", "brazilia"]
+	},
+	{
+		"question": "What is the largest country in the world?",
+		"answers": ["RUSSIA", "Russia", "russia", "mother russia", "the motherland", "soviet russia"]
+	},
+	{
+		"question": "How many players are there in a rugby league team?",
+		"answers": ["13", "thirteen"]
+	},
+	{
+		"question": "What's my name?",
+		"answers": ["mungabot", "MUNGABOT", "Mungabot", "MungaBot", "munga bot", "Munga bot", "Munga Bot", "MUNGA BOT"]
 	}
 ]
