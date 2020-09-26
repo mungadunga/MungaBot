@@ -124,7 +124,9 @@ client.on('message', message => {
         client.commands.get('serverinfo').execute(message, args); 
     } else if (command === 'reddit'){
         client.commands.get('reddit').execute(message, args); 
-    } 
+    } else if (command === 'pp'){
+        client.commands.get('pp').execute(message, args); 
+    }
 
     //helpcommands
 
@@ -188,6 +190,8 @@ client.on('message', message => {
         client.commands.get('info-serverinfo').execute(message, args); 
     } else if (helpcommand === 'info-reddit'){
         client.commands.get('info-reddit').execute(message, args); 
+    } else if (helpcommand === 'info-pp'){
+        client.commands.get('info-pp').execute(message, args); 
     }
 });
 
