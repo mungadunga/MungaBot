@@ -126,6 +126,8 @@ client.on('message', message => {
         client.commands.get('reddit').execute(message, args); 
     } else if (command === 'pp'){
         client.commands.get('pp').execute(message, args); 
+    } else if (command === 'sus'){
+        client.commands.get('sus').execute(message, args); 
     }
 
     //helpcommands

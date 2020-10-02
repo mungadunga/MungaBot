@@ -7,16 +7,7 @@ module.exports = {
 
         var randomnumber = Math.ceil(Math.random() * 10)
 
-        if(randomnumber > 0 || message.author.id === 602131435247239168){
-
-            const embedmunga = new Discord.MessageEmbed()
-            .setTitle("PP size calculator")
-            .addField(message.author.username + "'s PP", "8=======================================================================================================================================================D")
-            .setColor(0x002EFF)
-            .setFooter('yeet');
-            message.channel.send(embedmunga);
-
-        } else if(randomnumber === 1){
+        if(randomnumber === 1){
 
             const embed = new Discord.MessageEmbed()
             .setTitle("PP size calculator")
