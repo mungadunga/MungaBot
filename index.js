@@ -48,6 +48,14 @@ for(const file of helpcommandFiles){
     client.commands.set(helpcommand.name, helpcommand);
 }
 
+//cards folder
+
+const cardsFiles = fs.readdirSync('./cards/').filter(file => file.endsWith('.js'));
+for(const file of cardsFiles){
+    const cardscommand = require(`./cards/${file}`);
+    client.commands.set(cardscommand.name, cardscommand);
+}
+
 client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -59,6 +67,10 @@ client.on('message', message => {
     //helpcommands folder
 
     const helpcommand = command
+
+    //cards folder
+
+    const cardscommand = command
 
     //commands
 
@@ -194,6 +206,16 @@ client.on('message', message => {
         client.commands.get('info-reddit').execute(message, args); 
     } else if (helpcommand === 'info-pp'){
         client.commands.get('info-pp').execute(message, args); 
+    }
+
+    //cards folder
+
+    else if (cardscommand === 'cardsinfo'){
+        client.commands.get('cardsinfo').execute(message, args); 
+    } else if (cardscommand === 'uno'){
+        client.commands.get('uno').execute(message, args); 
+    } else if (cardscommand === 'matt'){
+        client.commands.get('matt').execute(message, args); 
     }
 });
 
