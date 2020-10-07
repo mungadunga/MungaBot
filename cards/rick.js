@@ -3,7 +3,7 @@ module.exports = {
     description: "rick card",
     execute(message, args){
 
-        message.channel.send({files: ["./images/cards/rick-astley.jpg"]});
+        message.channel.send({files: ["./cards/rick.jpg"]});
         
     }
 }

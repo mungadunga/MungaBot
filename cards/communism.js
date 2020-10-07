@@ -3,7 +3,7 @@ module.exports = {
     description: "communism card",
     execute(message, args){
 
-        message.channel.send({files: ["./images/cards/communism.jpg"]});
+        message.channel.send({files: ["./cards/communism.jpg"]});
         
     }
 }
