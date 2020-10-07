@@ -206,7 +206,10 @@ client.on('message', message => {
         client.commands.get('info-reddit').execute(message, args); 
     } else if (helpcommand === 'info-pp'){
         client.commands.get('info-pp').execute(message, args); 
+    } else if (helpcommand === 'info-sus'){
+        client.commands.get('info-sus').execute(message, args); 
     }
+
 
     //cards folder
 
@@ -216,6 +219,12 @@ client.on('message', message => {
         client.commands.get('uno').execute(message, args); 
     } else if (cardscommand === 'matt'){
         client.commands.get('matt').execute(message, args); 
+    } else if (cardscommand === 'communism'){
+        client.commands.get('communism').execute(message, args); 
+    } else if (cardscommand === 'suscard'){
+        client.commands.get('suscard').execute(message, args); 
+    } else if (cardscommand === 'rick'){
+        client.commands.get('rick').execute(message, args); 
     }
 });
 
