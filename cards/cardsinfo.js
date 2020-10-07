@@ -11,7 +11,7 @@ module.exports = {
         .setDescription("How to play: Before starting the match, you and your opponent will agree on the amount of cards and their rarity then just play lol")
         .addField("Common cards: (white)", "`/rick`")
         .addField("Uncommon cards: (green)", ".")
-        .addField("Rare cards: (blue)", "`/sus`")
+        .addField("Rare cards: (blue)", "`/suscard`")
         .addField("Epic cards: (purple)", "`/matt`")
         .addField("Legendary cards: (gold)", ".")
         .addField("Mythical cards: (red)", "`/uno`, `/communism`")
