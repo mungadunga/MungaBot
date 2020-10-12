@@ -225,6 +225,16 @@ client.on('message', message => {
         client.commands.get('suscard').execute(message, args); 
     } else if (cardscommand === 'rick'){
         client.commands.get('rick').execute(message, args); 
+    } else if (cardscommand === 'duo'){
+        client.commands.get('duo').execute(message, args); 
+    } else if (cardscommand === 'mememan'){
+        client.commands.get('mememan').execute(message, args); 
+    } else if (cardscommand === 'mememan-s1'){
+        client.commands.get('mememan-s1').execute(message, args); 
+    } else if (cardscommand === 'mememan-s2'){
+        client.commands.get('mememan-s2').execute(message, args); 
+    } else if (cardscommand === 'mememan-sx'){
+        client.commands.get('mememan-sx').execute(message, args); 
     }
 });
 
