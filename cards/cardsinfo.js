@@ -13,7 +13,7 @@ module.exports = {
         .addField("Uncommon cards: (green)", ".")
         .addField("Rare cards: (blue)", "`/suscard`, `/mememan`")
         .addField("Epic cards: (purple)", "`/matt`")
-        .addField("Legendary cards: (gold)", "`/duo`")
+        .addField("Legendary cards: (gold)", "`/giorno`, `/duo`")
         .addField("Mythical cards: (red)", "`/uno`, `/communism`")
         
         message.channel.send(embed);

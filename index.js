@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = "NzE0MTE5NzQwOTcyNTk3MzE4.Xu5wGA.bVkN7rqD4Hfj74DjKkLs_7Idq_g";
+const token = "NzE0MTE5NzQwOTcyNTk3MzE4.XsqB1Q.rZgo4avnMSgj7LAvWgS45wUOY0I";
 const prefix = '/';
 
 const fs = require('fs');
@@ -225,6 +225,8 @@ client.on('message', message => {
         client.commands.get('suscard').execute(message, args); 
     } else if (cardscommand === 'rick'){
         client.commands.get('rick').execute(message, args); 
+    } else if (cardscommand === 'giorno'){
+        client.commands.get('giorno').execute(message, args); 
     } else if (cardscommand === 'duo'){
         client.commands.get('duo').execute(message, args); 
     } else if (cardscommand === 'mememan'){
