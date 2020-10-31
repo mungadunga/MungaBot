@@ -140,7 +140,9 @@ client.on('message', message => {
         client.commands.get('pp').execute(message, args); 
     } else if (command === 'sus'){
         client.commands.get('sus').execute(message, args); 
-    }
+    } else if (command === 'fight'){
+        client.commands.get('fight').execute(message, args); 
+    } 
 
     //helpcommands
 

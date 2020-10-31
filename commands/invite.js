@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .setTitle("Click here to invite MungaBot to your server!")
-        .setDescription("https://discord.com/api/oauth2/authorize?client_id=768499573043363892&permissions=8&scope=bot");
+        .setDescription("https://discord.com/api/oauth2/authorize?client_id=714119740972597318&permissions=8&scope=bot");
 
         message.channel.send(embed);
     }
