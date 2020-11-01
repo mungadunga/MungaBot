@@ -210,6 +210,8 @@ client.on('message', message => {
         client.commands.get('info-pp').execute(message, args); 
     } else if (helpcommand === 'info-sus'){
         client.commands.get('info-sus').execute(message, args); 
+    }  else if (helpcommand === 'info-fight'){
+        client.commands.get('info-fight').execute(message, args); 
     }
 
 
