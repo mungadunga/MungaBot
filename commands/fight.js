@@ -10,7 +10,7 @@ module.exports = {
 
             message.channel.send(self + " vs " + user.displayName); 
 
-            let a = Math.round(Math.random() * 3)
+            let a = Math.ceil(Math.random() * 3)
             let b = Math.round(Math.random() * 10)
             let c = Math.round(Math.random() * 10)
             let d = Math.round(Math.random() * 10)
@@ -267,8 +267,5 @@ module.exports = {
             message.channel.send(embedHELP);
 
         }
-
-        
-
     }
 }

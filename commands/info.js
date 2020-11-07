@@ -10,7 +10,7 @@ module.exports = {
                 .setTitle("Welcome to MungaBot!")
                 .setDescription("To know more about a certain command, use /info - <command name> ( for example `/info-sup` )")
                 .addField("__*Recently Released*__:", "`/fight`")
-                .addField("Info Commands", "`/info`, `/version`, `/creator`, `/date`, `/invite`, `/userinfo`, `/serverinfo`")
+                .addField("Info Commands", "`/info`, `/version`, `/creator`, `/dates`, `/invite`, `/userinfo`, `/serverinfo`")
                 .addField("Regular Commands", "`/sup`, `/howgay`, `/iq`, `/insult`, `/repeat`, `/online`, `/pp`, `/quiz`, `/dm`, `/weather`, `/number`, `/snipe`, `/meme`, `/poll`, `/sus`")
                 .addField("Cards Commands:", "`/cardsinfo`" )
                 .addField("Admin commands", "`/kick`, `/ban`, `/clear`")

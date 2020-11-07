@@ -80,8 +80,8 @@ client.on('message', message => {
         client.commands.get('version').execute(message, args);
     } else if (command === 'creator'){
         client.commands.get('creator').execute(message, args);
-    } else if (command === 'date'){
-        client.commands.get('date').execute(message, args);
+    } else if (command === 'dates'){
+        client.commands.get('dates').execute(message, args);
     } else if (command === 'sup'){
         client.commands.get('sup').execute(message, args);
     } else if (command === 'userinfo'){
@@ -150,8 +150,8 @@ client.on('message', message => {
         client.commands.get('info-ban').execute(message, args); 
     } else if (helpcommand === 'info-creator'){
         client.commands.get('info-creator').execute(message, args); 
-    } else if (helpcommand === 'info-date'){
-        client.commands.get('info-date').execute(message, args); 
+    } else if (helpcommand === 'info-dates'){
+        client.commands.get('info-dates').execute(message, args); 
     } else if (helpcommand === 'info-discord'){
         client.commands.get('info-discord').execute(message, args); 
     } else if (helpcommand === 'info-dm'){

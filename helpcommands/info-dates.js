@@ -1,6 +1,6 @@
 module.exports = {
-    name: 'info-date',
-    description: "info about the date command",
+    name: 'info-dates',
+    description: "info about the dates command",
     execute(message, args){
 
         const Discord = require('discord.js');
