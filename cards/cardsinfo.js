@@ -14,7 +14,7 @@ module.exports = {
         .addField("Rare cards: (blue)", "`/suscard`, `/mememan`")
         .addField("Epic cards: (purple)", "`/matt`")
         .addField("Legendary cards: (gold)", "`/giorno`, `/duo`")
-        .addField("Mythical cards: (red)", "`/uno`, `/communism`")
+        .addField("Mythical cards: (red)", "`/uno`, `/communism`, `/ger`")
         
         message.channel.send(embed);
         

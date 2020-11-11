@@ -16,7 +16,7 @@ module.exports = {
 
         } else {
 
-            message.channel.send(user.toString(), {files: ["./images/redsus.jpg"]});
+            message.channel.send(user.toString(), {files: ["./media/redsus.jpg"]});
         }
     }
 }

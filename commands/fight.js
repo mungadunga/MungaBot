@@ -161,7 +161,7 @@ module.exports = {
 
                         }else if(d > 5){
                             setTimeout(function(){ 
-                                message.channel.send("Big Chungus traveled into another dimension where Thanos didn't even exist and " + user.displayName + "won the battle."); 
+                                message.channel.send("Big Chungus traveled into another dimension where Thanos didn't even exist and " + user.displayName + " won the battle."); 
                             }, 8000);
                         }
 
@@ -227,7 +227,7 @@ module.exports = {
                             message.channel.send(user.displayName + " says: tsugi ni omae wa NANII?? TO IU! And throws a dog out of nowhere."); 
                         }, 6000);
 
-                        if(d < 0){
+                        if(d > 0){
                             setTimeout(function(){ 
                                 message.channel.send(self + " says: NANII?? and tries to dodge but the dog had already bitten his dick. " + self + " dies from pain. Victory for " + user.displayName); 
                             }, 8000);

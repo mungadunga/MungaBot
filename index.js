@@ -142,7 +142,11 @@ client.on('message', message => {
         client.commands.get('sus').execute(message, args); 
     } else if (command === 'fight'){
         client.commands.get('fight').execute(message, args); 
-    } 
+    } else if (command === 'alia'){
+        client.commands.get('alia').execute(message, args); 
+    } else if (command === 'clap'){
+        client.commands.get('clap').execute(message, args); 
+    }
 
     //helpcommands
 
@@ -212,6 +216,10 @@ client.on('message', message => {
         client.commands.get('info-sus').execute(message, args); 
     }  else if (helpcommand === 'info-fight'){
         client.commands.get('info-fight').execute(message, args); 
+    }  else if (helpcommand === 'info-alia'){
+        client.commands.get('info-alia').execute(message, args); 
+    }  else if (helpcommand === 'info-clap'){
+        client.commands.get('info-clap').execute(message, args); 
     }
 
 
@@ -241,7 +249,9 @@ client.on('message', message => {
         client.commands.get('mememan-s2').execute(message, args); 
     } else if (cardscommand === 'mememan-sx'){
         client.commands.get('mememan-sx').execute(message, args); 
-    }
+    } else if (cardscommand === 'ger'){
+        client.commands.get('ger').execute(message, args); 
+    } 
 });
 
 //client login
