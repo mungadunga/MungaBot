@@ -9,12 +9,12 @@ module.exports = {
                 .setColor(0x7A7B80)
                 .setTitle("Welcome to MungaBot!")
                 .setDescription("To know more about a certain command, use /info - <command name> ( for example `/info-sup` )")
-                .addField("__*Recently Released*__:", "`/alia`, `/clap`")
-                .addField("Info Commands", "`/info`, `/version`, `/creator`, `/dates`, `/invite`, `/userinfo`, `/serverinfo`")
-                .addField("Regular Commands", "`/sup`, `/howgay`, `/iq`, `/insult`, `/repeat`, `/online`, `/pp`, `/quiz`, `/dm`, `/weather`, `/number`, `/snipe`, `/meme`, `/poll`, `/sus`, `/fight`")
-                .addField("Cards Commands:", "`/cardsinfo`" )
-                .addField("Admin commands", "`/kick`, `/ban`, `/clear`")
-                .addField("Follow mungadunga on social media!", "`/youtube`, `/twitter`, `/instagram`, `/discord`, `/reddit`, `/patreon`")
+                .addField("__Recently Released:__:", "`/alia`, `/clap`")
+                .addField("__Info Commands:__", "`/info`, `/version`, `/creator`, `/dates`, `/invite`, `/userinfo`, `/serverinfo`")
+                .addField("__Regular Commands:__", "`/sup`, `/howgay`, `/iq`, `/insult`, `/repeat`, `/online`, `/pp`, `/quiz`, `/dm`, `/weather`, `/number`, `/snipe`, `/meme`, `/poll`, `/sus`, `/fight`")
+                .addField("__Cards Commands:__", "`/cardsinfo`" )
+                .addField("__Admin commands:__", "`/kick`, `/ban`, `/clear`")
+                .addField("__Follow mungadunga on social media:__", "`/youtube`, `/twitter`, `/instagram`, `/discord`, `/reddit`, `/patreon`")
                         
                 message.channel.send(embed);
   
