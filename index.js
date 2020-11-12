@@ -146,6 +146,8 @@ client.on('message', message => {
         client.commands.get('alia').execute(message, args); 
     } else if (command === 'clap'){
         client.commands.get('clap').execute(message, args); 
+    } else if (command === 'hack'){
+        client.commands.get('hack').execute(message, args); 
     }
 
     //helpcommands
@@ -220,6 +222,8 @@ client.on('message', message => {
         client.commands.get('info-alia').execute(message, args); 
     }  else if (helpcommand === 'info-clap'){
         client.commands.get('info-clap').execute(message, args); 
+    } else if (helpcommand === 'info-hack'){
+        client.commands.get('info-hack').execute(message, args); 
     }
 
 
