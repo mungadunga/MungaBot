@@ -69,26 +69,26 @@ module.exports = {
                 }, 21000); 
 
                 setTimeout(function(){ 
-                    message.channel.bulkDelete(2);
-                }, 26000);
+                    message.channel.bulkDelete(1);
+                }, 23000);
 
                 setTimeout(function(){ 
                     user.send("UPLOADING VIRUS.EXE ████████████████] 98%");
-                }, 27000);
+                }, 24000);
 
                 setTimeout(function(){ 
                     message.channel.send("```Virus installed. The hack is complete.```");
-                }, 27000);
+                }, 24000);
                 
                 setTimeout(function(){ 
                     message.channel.send("Hello? This is MungaBot, we found a pedophile... Hmm his IP address? Okay, wait a minute...").then((msg)=>{
 
                         setTimeout(function(){ 
                             msg.edit("Okay i dm'ed it to you ");
-                        }, 6000); 
+                        }, 7000); 
 
                     });
-                }, 14000); 
+                }, 13000); 
             });
 
         } else {
