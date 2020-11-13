@@ -69,12 +69,8 @@ module.exports = {
                 }, 20000); 
 
                 setTimeout(function(){ 
-                    msg.edit("```0:09```");
-                }, 21000); 
-
-                setTimeout(function(){ 
                     msg.edit("```Sending viruses to " + user.displayName + "...```");
-                }, 22000); 
+                }, 20500); 
 
                 setTimeout(function(){ 
                     message.channel.bulkDelete(2);
@@ -86,14 +82,14 @@ module.exports = {
 
                 setTimeout(function(){ 
                     message.channel.send("```Virus installed. The hack is complete.```");
-                }, 27000);
+                }, 26000);
                 
                 setTimeout(function(){ 
                     message.channel.send("Hello? This is MungaBot, we found a pedophile... Hmm his IP address? Okay, wait a minute...").then((msg)=>{
 
                         setTimeout(function(){ 
                             msg.edit("Okay i dm'ed it to you ");
-                        }, 4000); 
+                        }, 5000); 
 
                     });
                 }, 14000); 
