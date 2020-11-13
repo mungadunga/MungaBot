@@ -57,20 +57,16 @@ module.exports = {
                 }, 17000); 
 
                 setTimeout(function(){ 
-                    msg.edit("```0:06```");
+                    msg.edit("```Getting IP...```");
                 }, 18000); 
 
                 setTimeout(function(){ 
-                    msg.edit("```0:07```");
+                    msg.edit("```223.158.16.151```");
                 }, 19000); 
 
                 setTimeout(function(){ 
-                    msg.edit("```0:08```");
-                }, 20000); 
-
-                setTimeout(function(){ 
                     msg.edit("```Sending viruses to " + user.displayName + "...```");
-                }, 20500); 
+                }, 20000); 
 
                 setTimeout(function(){ 
                     message.channel.bulkDelete(2);
@@ -89,17 +85,17 @@ module.exports = {
 
                         setTimeout(function(){ 
                             msg.edit("Okay i dm'ed it to you ");
-                        }, 5000); 
+                        }, 6000); 
 
                     });
                 }, 14000); 
 
 
                 setTimeout(function(){ 
-                    message.channel.send("```Getting IP...```").then((msg)=>{
+                    message.channel.send("``````").then((msg)=>{
 
                         setTimeout(function(){ 
-                            msg.edit("```223.158.16.151```");
+                            msg.edit("``````");
                         }, 2000); 
 
                     });
