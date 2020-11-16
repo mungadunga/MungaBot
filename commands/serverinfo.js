@@ -17,7 +17,8 @@ module.exports = {
         .addField("Roles Count", `${message.guild.roles.cache.size} roles`, true)
         .addField("Channels Count", `${message.guild.channels.cache.size} channels`, true)
         .addField("Creation date", `This server was created on ` + message.channel.guild.createdAt.toUTCString().substr(0, 16));
-        message.channel.send(embed)
+        message.channel.send(embed);
+
     }
 }      
 

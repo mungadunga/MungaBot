@@ -148,7 +148,11 @@ client.on('message', message => {
         client.commands.get('clap').execute(message, args); 
     } else if (command === 'hack'){
         client.commands.get('hack').execute(message, args); 
-    }
+    } else if (command === 'servercount'){
+        client.commands.get('servercount').execute(message, args); 
+    } else if (command === 'muda'){
+        client.commands.get('muda').execute(message, args); 
+    } 
 
     //helpcommands
 

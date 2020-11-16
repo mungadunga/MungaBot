@@ -12,6 +12,7 @@
     "combined-stream": "^1.0.8",
     "discord.js": "^12.2.0",
     "enmap": "^5.6.1",
+    "node-fetch": "^2.6.0",
     "sequelize": "^6.3.4",
     "sqlite3": "^5.0.0",
     "weather-js": "^2.0.0"
