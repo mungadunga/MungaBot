@@ -152,11 +152,22 @@ client.on('message', message => {
         client.commands.get('servercount').execute(message, args); 
     } else if (command === 'muda'){
         client.commands.get('muda').execute(message, args); 
-    } 
+    }
 
     //helpcommands
-
-    else if (helpcommand === 'info-ban'){
+    else if (helpcommand === 'info-cards'){
+        client.commands.get('info-cards').execute(message, args); 
+    } else if (helpcommand === 'info-admin'){
+        client.commands.get('info-admin').execute(message, args); 
+    } else if (helpcommand === 'info-commands'){
+        client.commands.get('info-commands').execute(message, args); 
+    } else if (helpcommand === 'info-media'){
+        client.commands.get('info-media').execute(message, args); 
+    } else if (helpcommand === 'info-socialmedia'){
+        client.commands.get('info-socialmedia').execute(message, args); 
+    } else if (helpcommand === 'info-utility'){
+        client.commands.get('info-utility').execute(message, args); 
+    } else if (helpcommand === 'info-ban'){
         client.commands.get('info-ban').execute(message, args); 
     } else if (helpcommand === 'info-creator'){
         client.commands.get('info-creator').execute(message, args); 
@@ -228,14 +239,16 @@ client.on('message', message => {
         client.commands.get('info-clap').execute(message, args); 
     } else if (helpcommand === 'info-hack'){
         client.commands.get('info-hack').execute(message, args); 
+    } else if (helpcommand === 'info-servercount'){
+        client.commands.get('info-servercount').execute(message, args); 
+    } else if (helpcommand === 'info-muda'){
+        client.commands.get('info-muda').execute(message, args); 
     }
 
 
     //cards folder
 
-    else if (cardscommand === 'cardsinfo'){
-        client.commands.get('cardsinfo').execute(message, args); 
-    } else if (cardscommand === 'uno'){
+    else if (cardscommand === 'uno'){
         client.commands.get('uno').execute(message, args); 
     } else if (cardscommand === 'matt'){
         client.commands.get('matt').execute(message, args); 

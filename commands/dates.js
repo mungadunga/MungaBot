@@ -14,6 +14,7 @@ module.exports = {
         MungaBot v3.0.0: 22.07.20 (added tons of new commands, like /weather and /poll)
         MungaBot v4.0.0: 07.08.20 (added /info commands to every existing one)
         MungaBot v5.0.0: 04.10.20 (added the cards category)
+        MungaBot v6.0.0: 18.11.20 (redesigned /info and added multiple info commands)
         `);
         
         message.channel.send(embed);
