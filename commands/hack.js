@@ -41,6 +41,16 @@ module.exports = {
                 }, 13000); 
 
                 setTimeout(function(){ 
+                    message.channel.send("Hello? This is MungaBot, we found a pedophile... Hmm his IP address? Okay, wait a minute...").then((msg)=>{
+
+                        setTimeout(function(){ 
+                            msg.edit("Okay done. Go hack " + user.displayName + " now ;)");
+                        }, 7000); 
+
+                    });
+                }, 13900); 
+
+                setTimeout(function(){ 
                     msg.edit("```0:02```");
                 }, 14000); 
 
@@ -79,16 +89,6 @@ module.exports = {
                 setTimeout(function(){ 
                     msg.edit("```Virus installed. The hack is complete.```");
                 }, 24000);
-                
-                setTimeout(function(){ 
-                    message.channel.send("Hello? This is MungaBot, we found a pedophile... Hmm his IP address? Okay, wait a minute...").then((msg)=>{
-
-                        setTimeout(function(){ 
-                            msg.edit("Okay done. Go hack " + user.displayName + " now ;)");
-                        }, 7000); 
-
-                    });
-                }, 13900); 
             });
 
         } else {
