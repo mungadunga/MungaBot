@@ -274,6 +274,10 @@ client.on('message', message => {
         client.commands.get('ger').execute(message, args); 
     } else if (cardscommand === 'zoom'){
         client.commands.get('zoom').execute(message, args); 
+    } else if (cardscommand === 'rick2'){
+        client.commands.get('rick2').execute(message, args); 
+    } else if (cardscommand === 'rick3'){
+        client.commands.get('rick3').execute(message, args); 
     } 
 });
 
