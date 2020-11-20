@@ -272,6 +272,8 @@ client.on('message', message => {
         client.commands.get('mememan-sx').execute(message, args); 
     } else if (cardscommand === 'ger'){
         client.commands.get('ger').execute(message, args); 
+    } else if (cardscommand === 'zoom'){
+        client.commands.get('zoom').execute(message, args); 
     } 
 });
 

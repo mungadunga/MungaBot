@@ -8,7 +8,6 @@ module.exports = {
 
         .setColor(0xFF0000)
         .addField("MungaDunga's youtube channel:", "https://www.youtube.com/channel/UCm6m7iJj2CSdcmfKAYtgVFg")
-        .setFooter("sub to him or u gae", message.author.displayAvatarURL());
         
         message.channel.send(embed);
     }
