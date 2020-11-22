@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .setTitle("**Admin:**")
-        .addField("__These commands can only be used if you have the ADMINISTRATOR role__","`/kick`, `/ban`, `/clear`");
+        .addField("__These commands can only be used if you have the ADMINISTRATOR role__","`>kick`, `>ban`, `>clear`");
         
         message.channel.send(embed);
         

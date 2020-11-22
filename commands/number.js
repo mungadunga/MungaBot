@@ -20,8 +20,8 @@ module.exports = {
     
             .setColor(0xFF0000)
             .setTitle("Please enter a valid number")
-            .addField("Correct usage:", "`/number` <number>")
-            .setFooter("For more info use `/info-number`");
+            .addField("Correct usage:", "`>number` <number>")
+            .setFooter("For more info use `>info-number`");
 
             message.channel.send(embed2);
 
@@ -30,9 +30,9 @@ module.exports = {
             const embed3 = new Discord.MessageEmbed()
 
             .setColor(0xFF0000)
-            .setTitle("Please add a number after /number")
-            .addField("Correct usage:", "`/number` <number>")
-            .setFooter("For more info use `/info-number`");
+            .setTitle("Please add a number after >number")
+            .addField("Correct usage:", "`>number` <number>")
+            .setFooter("For more info use `>info-number`");
 
             message.channel.send(embed3);
 

@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("PP command", "How big is your PP?")
-        .addField("Usage:", "`/pp`")
+        .addField("Usage:", "`>pp`")
         .setTimestamp();
         
         message.channel.send(embed);

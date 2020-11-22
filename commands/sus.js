@@ -9,8 +9,8 @@ module.exports = {
 
             const embed = new Discord.MessageEmbed()
             .setColor(0xFF0000)
-            .addField("Correct usage:", "`/sus` <@user>")
-            .setFooter("For more info use `/info-sus`")
+            .addField("Correct usage:", "`>sus` <@user>")
+            .setFooter("For more info use `>info-sus`")
         
             message.channel.send(embed);
 

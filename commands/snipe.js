@@ -47,8 +47,8 @@ module.exports = {
             const embedHELP = new Discord.MessageEmbed()
     
             .setColor(0xFF0000)
-            .addField("Correct usage:", "`/snipe` <@user>")
-            .setFooter("For more info use `/info-snipe`");
+            .addField("Correct usage:", "`>snipe` <@user>")
+            .setFooter("For more info use `>info-snipe`");
             message.channel.send(embedHELP);
 
         }

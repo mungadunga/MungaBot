@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Sup command", "( mostly used to test if the bot is online lol )")
-        .addField("Usage:", "`/sup`")
+        .addField("Usage:", "`>sup`")
         .setTimestamp();
         
         message.channel.send(embed);

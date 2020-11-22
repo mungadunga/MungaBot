@@ -12,8 +12,8 @@ module.exports = {
         if(!args[0]){
             const embed2 = new Discord.MessageEmbed()
             .setColor(0xFF0000)
-            .addField("Correct usage:", "`/poll` <...>")
-            .setFooter("For more info use `/info-poll`")
+            .addField("Correct usage:", "`>poll` <...>")
+            .setFooter("For more info use `>info-poll`")
             .setTimestamp();
     
             message.channel.send(embed2);

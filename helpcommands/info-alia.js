@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Ali-A command", "Behold, the shittiest yet the funniest intro of all time!")
-        .addField("Usage:", "`/alia`")
+        .addField("Usage:", "`>alia`")
         .setTimestamp();
         
         message.channel.send(embed);

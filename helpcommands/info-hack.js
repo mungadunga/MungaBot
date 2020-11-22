@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Hack command", "Hack someone. 100% legit.")
-        .addField("Usage:", "`/hack <@user>`")
+        .addField("Usage:", "`>hack <@user>`")
         .setTimestamp();
         
         message.channel.send(embed);

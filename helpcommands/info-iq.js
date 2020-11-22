@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("IQ command", "How high is your IQ?")
-        .addField("Usage:", "`/iq`")
+        .addField("Usage:", "`>iq`")
         .setTimestamp();
         
         message.channel.send(embed);

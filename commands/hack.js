@@ -94,8 +94,8 @@ module.exports = {
         } else {
             const embedHELP = new Discord.MessageEmbed()
             .setColor(0xFF0000)
-            .addField("Correct usage:", "`/hack` <@user>")
-            .setFooter("For more info use `/info-hack`");
+            .addField("Correct usage:", "`>hack` <@user>")
+            .setFooter("For more info use `>info-hack`");
             message.channel.send(embedHELP);
         }
     }

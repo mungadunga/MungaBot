@@ -5,7 +5,7 @@ module.exports = {
 
         const Discord = require('discord.js');
         const weather = require('weather-js');
-        const prefix = '/';
+        const prefix = '>';
 
         if (message.content.startsWith(prefix + 'weather')){
             weather.find({search: args[0], degreeType: 'C'}, function(err, result){

@@ -8,7 +8,6 @@ module.exports = {
 
         .addField('How high is ' + message.author.username + "'s IQ?", message.author.username + ' has an IQ of ' + Math.round(Math.random() * 200) + ' :brain:')
         .setColor(0x002EFF)
-        .setFooter('BIG BRAIN, BIG BRAIN');
 
         message.channel.send(embed);
 

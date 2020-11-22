@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Snipe command", "Try this command on someone! And if ur lucky, u may get a crit hit!")
-        .addField("Usage:", "`/snipe` <user>")
+        .addField("Usage:", "`>snipe` <user>")
         .setTimestamp();
         
         message.channel.send(embed);

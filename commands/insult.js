@@ -2,12 +2,8 @@ module.exports = {
     name: 'insult',
     description: "do not try to insult mungabot... and do not prepare a comeback cuz ur about to get smashed...",
     execute(message, args){
-
-        const Discord = require('discord.js');
-        let user = message.mentions.members.first();
-        let guild = message.guild
         var d = Math.random();
-
+        
         if (d > 0.66){
             message.channel.send(`You're an idiot. A moron of the highest order. You're so stupid it's a wonder and a pity you can remember to breath. Intelligent ideas bounce off your head as if it were coated with teflon. Creative thoughts take alternate transportation in order to avoid even being in the same state as you. If you had an original thought it would die of loneliness before the hour was out. On an intelligence scale of 1 to 10 (10 corresponding to the highest attainable IQ) you're rating is so far into negative numbers that one would need to travel into another quantum reality in order to even catch a distant glimpse of it. Shut up and go away lest you achieve the physical retribution your behaviour merits.`);
         } else if (d < 0.33){

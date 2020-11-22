@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = "NzE0MTE5NzQwOTcyNTk3MzE4.XsqB1Q.rZgo4avnMSgj7LAvWgS45wUOY0I";
-const prefix = '/';
+const prefix = '>';
 
 const fs = require('fs');
 
 client.on('ready', () =>{
   console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setActivity('/info', { type: 'WATCHING' }).catch(console.error);
+  client.user.setActivity('>info', { type: 'WATCHING' }).catch(console.error);
 
 });
 
@@ -152,6 +152,10 @@ client.on('message', message => {
         client.commands.get('servercount').execute(message, args); 
     } else if (command === 'muda'){
         client.commands.get('muda').execute(message, args); 
+    } else if (command === 'awaken'){
+        client.commands.get('awaken').execute(message, args); 
+    } else if (command === 'spoiler'){
+        client.commands.get('spoiler').execute(message, args); 
     }
 
     //helpcommands
@@ -243,6 +247,10 @@ client.on('message', message => {
         client.commands.get('info-servercount').execute(message, args); 
     } else if (helpcommand === 'info-muda'){
         client.commands.get('info-muda').execute(message, args); 
+    } else if (helpcommand === 'info-awaken'){
+        client.commands.get('info-awaken').execute(message, args); 
+    } else if (helpcommand === 'info-spoiler'){
+        client.commands.get('info-spoiler').execute(message, args); 
     }
 
 

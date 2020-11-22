@@ -8,8 +8,8 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Quiz command", "You will have 10 seconds to answer to MungaBot's question! First one to answer correctly wins.")
-        .addField("Usage:", "`/quiz`")
-        .setFooter("When answering a question, do not use the / prefix!")
+        .addField("Usage:", "`>quiz`")
+        .setFooter("When answering a question, do not use the > prefix!")
         .setTimestamp();
         
         message.channel.send(embed);

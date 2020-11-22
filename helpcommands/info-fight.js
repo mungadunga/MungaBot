@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Fight command", "Fight someone in your server!")
-        .addField("Usage:", "`/fight` <user>")
+        .addField("Usage:", "`>fight` <user>")
         .setTimestamp();
         
         message.channel.send(embed);

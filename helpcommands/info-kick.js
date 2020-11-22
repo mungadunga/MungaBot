@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Kick command", "Kick someone from your server! ( You need the ADMINISTRATOR permission in order to use this command )")
-        .addField("Usage:", "`/kick` <user>")
+        .addField("Usage:", "`>kick` <user>")
         .setTimestamp();
         
         message.channel.send(embed);

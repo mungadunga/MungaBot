@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Youtube command", "Sub to my channel! Use `/youtube` and MungaBot will send u the link")
-        .addField("Usage:", "`/youtube`")
+        .addField("Usage:", "`>youtube`")
         .setTimestamp();
         
         message.channel.send(embed);

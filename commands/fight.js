@@ -262,8 +262,8 @@ module.exports = {
             const embedHELP = new Discord.MessageEmbed()
     
             .setColor(0xFF0000)
-            .addField("Correct usage:", "`/fight` <@user>")
-            .setFooter("For more info use `/info-fight`");
+            .addField("Correct usage:", "`>fight` <@user>")
+            .setFooter("For more info use `>info-fight`");
             message.channel.send(embedHELP);
 
         }

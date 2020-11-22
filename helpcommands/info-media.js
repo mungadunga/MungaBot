@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .setTitle("**Media:**")
-        .addField("__List of all commands using jpg and mp4 files:__","`/alia`, `/muda`, `/meme`, `/sus`");
+        .addField("__List of all commands using jpg and mp4 files:__","`>alia`, `>muda`, `>meme`, `>sus`, `>awaken`");
         
         message.channel.send(embed);
         

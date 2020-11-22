@@ -5,7 +5,7 @@ module.exports = {
 
         const Discord = require('discord.js');
         
-        var version = '6.0.2'; 
+        var version = '6.1.0'; 
 
         //embed
 

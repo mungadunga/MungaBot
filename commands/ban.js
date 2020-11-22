@@ -4,7 +4,7 @@ module.exports = {
     guildOnly: true,
     execute(message, args){
 
-        const prefix = '/'
+        const prefix = '>'
 
         if (message.content.startsWith(`${prefix}ban`)) {
 

@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Servercount command", "Shows the number of servers MungaBot is in.")
-        .addField("Usage:", "`/servercount`")
+        .addField("Usage:", "`>servercount`")
         .setTimestamp();
         
         message.channel.send(embed);

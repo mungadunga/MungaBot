@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Poll command", "Create a simple yes or no poll! Just type your opinion / question and MungaBot will automatically generate a poll for you with 0 effort!")
-        .addField("Usage:", "`/poll` <...>")
+        .addField("Usage:", "`>poll` <...>")
         .setTimestamp();
         
         message.channel.send(embed);

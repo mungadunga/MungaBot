@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Clap command", "Replace spaces with clap emojis!")
-        .addField("Usage:", "`/clap` <...>")
+        .addField("Usage:", "`>clap` <...>")
         .setTimestamp();
         
         message.channel.send(embed);

@@ -9,8 +9,8 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
     
             .setColor(0xFF0000)
-            .addField("Correct usage:", "`/repeat` <...>")
-            .setFooter("For more info use `/info-repeat`");
+            .addField("Correct usage:", "`>repeat` <...>")
+            .setFooter("For more info use `>info-repeat`");
             
             message.channel.send(embed);
         } else {

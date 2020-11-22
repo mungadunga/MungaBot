@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Userinfo command", "Shows ur profile and some important information related to it")
-        .addField("Usage:", "`/userinfo`")
+        .addField("Usage:", "`>userinfo`")
         .setTimestamp();
         
         message.channel.send(embed);

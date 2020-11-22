@@ -7,8 +7,8 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         .setColor(0x7A7B80)
-        .addField("Howgay command", "MungaBot can sense the gayness inside every human, use `/howgay` to test if you truly belong to this server!")
-        .addField("Usage:", "`/howgay`")
+        .addField("Howgay command", "MungaBot can sense the gayness inside every human, use `>howgay` to test if you truly belong to this server!")
+        .addField("Usage:", "`>howgay`")
         .setTimestamp();
         
         message.channel.send(embed);
