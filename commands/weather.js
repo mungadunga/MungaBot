@@ -9,7 +9,7 @@ module.exports = {
 
         if (message.content.startsWith(prefix + 'weather')){
             weather.find({search: args[0], degreeType: 'C'}, function(err, result){
-                if (err) message.channel.send('bro u gotta type a city name after `/weather`, it makes sense right?');
+                if (err) message.channel.send('u gotta add a city name after `>weather`, it makes sense right?');
                 if(!args[0]) return;
 
                 if (result === undefined || result.length === 0) return message.channel.send("i think u mispelled " + message.content + ", please try again");

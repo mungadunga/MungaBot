@@ -8,7 +8,46 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .setTitle("**Commands:**")
-        .addField("__List of all regular commands:__","`>sup`, `>howgay`, `>iq`, `>insult`, `>repeat`, `>pp`, `>quiz`, `>servercount`, `>online`,`>dm`,`>weather`,`>number`, `>snipe`, `>poll`, `>fight`, `>clap`, `>hack`");
+        .addField("List of all commands:",`
+        
+        __Regular Commands:__
+        >clap
+        >creator
+        >dates
+        >dm 
+        >fight
+        >hack
+        >howgay
+        >insult
+        >iq
+        >number
+        >online
+        >poll
+        >pp 
+        >quiz
+        >repeat
+        >servercount
+        >serverinfo
+        >snipe
+        >spoiler
+        >sup
+        >userinfo
+        >version
+        >weather
+
+        __Media:__
+        >alia
+        >awaken
+        >coinflip
+        >meme
+        >muda
+        >sus
+
+        __Admin:__
+        >ban
+        >clear
+        >kick
+        `);
         
         message.channel.send(embed);
         

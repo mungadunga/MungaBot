@@ -156,21 +156,17 @@ client.on('message', message => {
         client.commands.get('awaken').execute(message, args); 
     } else if (command === 'spoiler'){
         client.commands.get('spoiler').execute(message, args); 
+    } else if (command === 'coinflip'){
+        client.commands.get('coinflip').execute(message, args); 
     }
 
     //helpcommands
     else if (helpcommand === 'info-cards'){
         client.commands.get('info-cards').execute(message, args); 
-    } else if (helpcommand === 'info-admin'){
-        client.commands.get('info-admin').execute(message, args); 
     } else if (helpcommand === 'info-commands'){
         client.commands.get('info-commands').execute(message, args); 
-    } else if (helpcommand === 'info-media'){
-        client.commands.get('info-media').execute(message, args); 
     } else if (helpcommand === 'info-socialmedia'){
         client.commands.get('info-socialmedia').execute(message, args); 
-    } else if (helpcommand === 'info-utility'){
-        client.commands.get('info-utility').execute(message, args); 
     } else if (helpcommand === 'info-ban'){
         client.commands.get('info-ban').execute(message, args); 
     } else if (helpcommand === 'info-creator'){
@@ -251,11 +247,11 @@ client.on('message', message => {
         client.commands.get('info-awaken').execute(message, args); 
     } else if (helpcommand === 'info-spoiler'){
         client.commands.get('info-spoiler').execute(message, args); 
+    } else if (helpcommand === 'info-coinflip'){
+        client.commands.get('info-coinflip').execute(message, args); 
     }
 
-
     //cards folder
-
     else if (cardscommand === 'uno'){
         client.commands.get('uno').execute(message, args); 
     } else if (cardscommand === 'matt'){

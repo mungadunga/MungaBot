@@ -7,7 +7,6 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         .setTitle(message.author.username + " 's Profile")
-        .addField('__Player Name__', message.author.username)
         .addField('__' + message.author.username + " 's ID__", message.author.id)
         .addField('__Current Server__', message.guild.name)
         .setColor(0x002EFF)

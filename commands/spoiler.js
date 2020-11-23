@@ -3,7 +3,18 @@ module.exports = {
     description: "spoiler",
     execute(message, args){
         let letter = args.join("");
-        message.delete();
-        message.channel.send("||" + letter.split("").join('||||') + "||");
+        const Discord = require('discord.js')
+
+        if(!args[0]){
+            const embedHELP = new Discord.MessageEmbed()
+            .setColor(0xFF0000)
+            .addField("Correct usage:", "`>spoiler` <...>")
+            .setFooter("For more info use `>info-spoiler`");
+            message.channel.send(embedHELP);
+        } else {
+            message.delete();
+            message.channel.send("||" + letter.split("").join('||||') + "||");
+        }
+
     }
 }
