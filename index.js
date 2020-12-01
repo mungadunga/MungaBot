@@ -158,6 +158,8 @@ client.on('message', message => {
         client.commands.get('spoiler').execute(message, args); 
     } else if (command === 'coinflip'){
         client.commands.get('coinflip').execute(message, args); 
+    } else if (command === 'reminder'){
+        client.commands.get('reminder').execute(message, args); 
     }
 
     //helpcommands
@@ -249,6 +251,8 @@ client.on('message', message => {
         client.commands.get('info-spoiler').execute(message, args); 
     } else if (helpcommand === 'info-coinflip'){
         client.commands.get('info-coinflip').execute(message, args); 
+    } else if (helpcommand === 'info-reminder'){
+        client.commands.get('info-reminder').execute(message, args); 
     }
 
     //cards folder
