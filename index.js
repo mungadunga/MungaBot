@@ -35,6 +35,7 @@ client.on('guildMemberRemove', member =>{
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 client.commands = new Discord.Collection();
+
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
@@ -59,23 +60,15 @@ for(const file of cardsFiles){
 client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
-    //commands folder
-
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
-
-    //helpcommands folder
-
     const helpcommand = command
-
-    //cards folder
-
     const cardscommand = command
 
     //commands
 
     if(command === 'info'){
-        client.commands.get('info').execute(message, args); 
+        client.commands.get('info').execute(message, args);
     } else if (command === 'version'){
         client.commands.get('version').execute(message, args);
     } else if (command === 'creator'){
@@ -160,6 +153,8 @@ client.on('message', message => {
         client.commands.get('coinflip').execute(message, args); 
     } else if (command === 'reminder'){
         client.commands.get('reminder').execute(message, args); 
+    } else if (command === 'calculate'){
+        client.commands.get('calculate').execute(message, args); 
     }
 
     //helpcommands
@@ -253,6 +248,8 @@ client.on('message', message => {
         client.commands.get('info-coinflip').execute(message, args); 
     } else if (helpcommand === 'info-reminder'){
         client.commands.get('info-reminder').execute(message, args); 
+    } else if (helpcommand === 'info-calculate'){
+        client.commands.get('info-calculate').execute(message, args); 
     }
 
     //cards folder

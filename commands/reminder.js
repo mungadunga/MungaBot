@@ -28,8 +28,8 @@ module.exports = {
 
                 const HELPembed = new Discord.MessageEmbed()
                 .setColor(0xFF0000)
-                .setTitle("Please write your reminder after >reminder ( for example >reminder 60 upload memes)")
-                .addField("Correct usage:", "`>reminder` <number> <...>")
+                .setTitle("Missing argument: >reminder<")
+                .addField("Correct usage:", "`>reminder` <number> <reminder> ( for example >reminder 60 upload memes )")
                 .setFooter("For more info use `>info-reminder`");
                 message.channel.send(HELPembed);
             }
@@ -38,8 +38,8 @@ module.exports = {
 
             const HELPembed3 = new Discord.MessageEmbed()
             .setColor(0xFF0000)
-            .setTitle("Please enter a number after >reminder")
-            .addField("Correct usage:", "`>reminder` <number> <...>")
+            .setTitle("Missing Argument: >number<")
+            .addField("Correct usage:", "`>reminder` <number> <reminder>")
             .setFooter("For more info use `>info-reminder`");
             message.channel.send(HELPembed3);
 
