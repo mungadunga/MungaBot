@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Reminder command", "Create a reminder using MungaBot! For example >reminder 60 upload memes ( will remind you to upload memes after 60 minutes )")
-        .addField("Usage:", "`>reminder` <number> <your reminder> ( <number> in minutes )")
+        .addField("Usage:", "`>reminder` <time> <your_reminder> ( <time> in minutes )")
         .setTimestamp();
         
         message.channel.send(embed);
