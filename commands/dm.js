@@ -18,6 +18,6 @@ module.exports = {
          user.send(embed2);
          message.delete({timeout: 1});
          message.author.send("DM sucessfully sent!");
-      }
-   }
-}
+      };
+   },
+};

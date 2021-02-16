@@ -3,7 +3,6 @@ module.exports = {
    description: "online command",
    execute(message, args){ 
       const Discord = require('discord.js');
-
       const embed = new Discord.MessageEmbed()
       .addField("Online Members", message.guild.members.cache.filter(member => member.presence.status == "online").size)
       .addField("Offline Members", message.guild.members.cache.filter(member => member.presence.status == "offline").size)

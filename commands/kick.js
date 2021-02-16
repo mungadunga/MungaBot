@@ -12,7 +12,7 @@ module.exports = {
             message.reply("You cannont kick this member");
          }
       });
-   }
-}
+   },
+};
 
 

@@ -22,16 +22,15 @@ module.exports = {
             .setTitle("Please input a valid calculation.")
             .addField("Correct usage:", "`>calculate` <math>")
             .setFooter("For more info use `>info-calculate`");
-
             return message.channel.send(embed2);
-         }
+         };
    
          const embed3 = new Discord.MessageEmbed()
          .setColor(0x7A7B80)
          .setTitle("Math calculation")
          .addField('Input', `\`\`\`${args.join('')}\`\`\``)
-         .addField('Output', `\`\`\`js\n${resp}\`\`\``)
+         .addField('Output', `\`\`\`js\n${resp}\`\`\``);
          message.channel.send(embed3);
-      }
-   }
-}
+      };
+   },
+};

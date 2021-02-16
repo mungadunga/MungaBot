@@ -4,9 +4,7 @@ module.exports = {
    execute(message, args){
       const quiz = require('./quiz.json');
       const item = quiz[Math.floor(Math.random() * quiz.length)];
-      const filter = response => {
-         return item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
-      };
+      const filter = response => item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 
       message.channel.send(item.question).then(() => {
          message.channel.awaitMessages(filter, { max: 1, time: 10000, errors: ['time'] })

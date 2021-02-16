@@ -23,5 +23,5 @@ module.exports = {
          };
       };
       message.channel.send(func(args[0], args[1]));
-   }
-}
+   },
+};

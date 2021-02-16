@@ -15,6 +15,5 @@ module.exports = {
          message.delete();
          message.channel.send("||" + letter.split("").join('||||') + "||");
       }
-
    }
 }

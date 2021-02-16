@@ -14,7 +14,7 @@ module.exports = {
             .setColor(0x7A7B80)
             .addField("Reminder:", t2)
             .setFooter("Reminder set " + (t1/60000) + " minutes ago")
-            setTimeout(function(){ 
+            setTimeout(() => { 
                user.send(embed);
                user.send("<@" + message.author.id + ">");
             }, t1); 
@@ -40,6 +40,6 @@ module.exports = {
          .addField("Correct usage:", "`>reminder` <time> <your_reminder> ( <time> in minutes! )")
          .setFooter("For more info use `>info-reminder`");
          message.channel.send(HELPembed2);
-      }
-   }
-}
+      };
+   },
+};

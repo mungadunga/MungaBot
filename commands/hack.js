@@ -1,5 +1,3 @@
-const { lsolve } = require('mathjs');
-
 module.exports = {
    name: 'hack',
    description: "hack command",

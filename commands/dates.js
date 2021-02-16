@@ -14,5 +14,5 @@ module.exports = {
       .addField("__MungaBot v6.0.0:__ 18.11.20", "redesigned >info, and switched prefix from / to >")
       .addField("__MungaBot v7.0.0:__ 13.02.21", "organised mungabot's files")
       message.channel.send(embed);
-   }    
-}   
+   }, 
+};   

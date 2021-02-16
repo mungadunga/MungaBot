@@ -4,10 +4,8 @@ module.exports = {
     execute(message, args){
       const Discord = require('discord.js');
       const embed = new Discord.MessageEmbed()
-
       .setColor(0xFF0000)
-      .addField("MungaDunga's youtube channel:", "https://www.youtube.com/channel/UCm6m7iJj2CSdcmfKAYtgVFg")
-      
+      .addField("MungaDunga's youtube channel:", "https://www.youtube.com/channel/UCm6m7iJj2CSdcmfKAYtgVFg");
       message.channel.send(embed);
    }
 }
