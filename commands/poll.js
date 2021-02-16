@@ -3,11 +3,9 @@ module.exports = {
     description: "create a simple yes or no poll!",
     execute(message, args){
 
-        const Discord = require('discord.js');
+      const Discord = require('discord.js');
 
-        function emoji (id) {
-            return client.emojis.get(id).toString();
-        }
+      let emoji = (id) => client.emojis.get(id).toString();
 
         if(!args[0]){
             const embed2 = new Discord.MessageEmbed()

@@ -13,8 +13,8 @@ module.exports = {
             if(!args[0]) return;
             if (result === undefined || result.length === 0) return message.channel.send("i think you mispelled " + message.content + ", please try again");
 
-            var current = result[0].current;
-            var location =  result[0].location;
+            let current = result[0].current;
+            let location =  result[0].location;
 
             const embed = new Discord.MessageEmbed()
             .setDescription(`**${current.skytext}**`)
@@ -31,6 +31,6 @@ module.exports = {
 
             message.channel.send(embed);
          });
-      }
-   }
-}
+      };
+   },
+};

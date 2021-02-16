@@ -1,7 +1,7 @@
 module.exports = {
-    name: 'calculate',
-    description: "calculate command",
-    execute(message, args){
+   name: 'calculate',
+   description: "calculate command",
+   execute(message, args){
       const math = require('mathjs');
       const Discord = require('discord.js');
 
