@@ -13,15 +13,27 @@ client.on('ready', () => {
 //welcomes and goodbyes
 
 client.on('guildMemberAdd', member =>{
-   const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
+   const channel = member.guild.channels.cache.find(channel => channel.id == "666363740349792303" || channel.id == "724904900651122723");
    if(!channel) return;
-   channel.send(`Welcome to OUR server ${member}, no capitalism allowed here!`);
+   
+   let welcomeEmbed = new Discord.MessageEmbed()
+   .setColor(0x00FF00)
+   .setTitle(`Welcome!`)
+   .setDescription(`Hey ${member}, we hope you'll have a great time in our server!`)
+   .setThumbnail(member.user.displayAvatarURL())
+   return channel.send(welcomeEmbed);
 });
 
 client.on('guildMemberRemove', member =>{
-   const channel = member.guild.channels.cache.find(channel => channel.name === "👋┃welcome");
+   const channel = member.guild.channels.cache.find(channel => channel.id == "666363740349792303" || channel.id == "724904900651122723");
    if(!channel) return;
-   channel.send(`Blyat, ${member.displayName} has left the server`);
+
+   let goodbyeEmbed = new Discord.MessageEmbed()
+   .setColor(0xFF0000)
+   .setTitle(`Ouch!`)
+   .setDescription(`${member.displayName} just left the server!`)
+   .setThumbnail(member.user.displayAvatarURL())
+   return channel.send(goodbyeEmbed);
 });
 
 // commands
