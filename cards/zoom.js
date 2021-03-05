@@ -1,9 +1,8 @@
 module.exports = {
-    name: 'zoom',
-    description: "zoom card",
-    execute(message, args){
-
-        message.channel.send({files: ["./cards/zoom.jpg"]});
-        
-    }
+   name: 'zoom',
+   description: "zoom card",
+   "rarity": "rare",
+   execute(message, args){
+      message.channel.send({files: ["./cards/zoom.jpg"]});
+   }
 }

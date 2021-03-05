@@ -8,7 +8,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
         .setColor(0x7A7B80)
         .addField("Spoiler command", "Write something in an annoying spoiler format!")
-        .addField("Usage:", "`>spoiler` <...>")
+        .addField("Usage:", "`.spoiler` <...>")
         .setTimestamp();
         message.channel.send(embed);
         

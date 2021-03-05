@@ -8,8 +8,8 @@ module.exports = {
       if(!user){
          const embed = new Discord.MessageEmbed()
          .setColor(0xFF0000)
-         .addField("Correct usage:", "`>dm` <@user> <message>")
-         .setFooter("For more info use `>info-dm`");
+         .addField("Correct usage:", "`.dm` <@user> <message>")
+         .setFooter("For more info use `.info-dm`");
          message.channel.send(embed);
       } else {
          const embed2 = new Discord.MessageEmbed()

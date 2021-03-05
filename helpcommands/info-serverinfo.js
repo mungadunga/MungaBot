@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Serverinfo command", "Shows some important info about your server")
-        .addField("Usage:", "`>serverinfo`")
+        .addField("Usage:", "`.serverinfo`")
         .setTimestamp();
         
         message.channel.send(embed);

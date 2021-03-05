@@ -7,7 +7,7 @@ module.exports = {
       const embed = new Discord.MessageEmbed()
       .setColor(0x7A7B80)
       .addField("Dates command", "Displays release dates of MungaBot's main versions!")
-      .addField("Usage:", "`>dates`")
+      .addField("Usage:", "`.dates`")
       .setTimestamp();
       message.channel.send(embed);
    }

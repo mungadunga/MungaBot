@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Patreon command", "Support MungaDunga and MungaBot on patreon!")
-        .addField("Usage:", "`>patreon`")
+        .addField("Usage:", "`.patreon`")
         .setTimestamp();
         
         message.channel.send(embed);

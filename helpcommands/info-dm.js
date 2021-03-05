@@ -6,7 +6,7 @@ module.exports = {
       const embed = new Discord.MessageEmbed()
       .setColor(0x7A7B80)
       .addField("DM command", "Use MungaBot to dm someone! It is 100% anonymous ( it even deletes your original message WOW )")
-      .addField("Usage:", "`>dm` <user> <your message> ( for example `/dm` @mungabot hello )")
+      .addField("Usage:", "`.dm` <user> <your message> ( for example `/dm` @mungabot hello )")
       .setTimestamp();
       message.channel.send(embed);
    }

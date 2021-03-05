@@ -21,24 +21,24 @@ module.exports = {
          } else if(!args[1]){
             const HELPembed = new Discord.MessageEmbed()
             .setColor(0xFF0000)
-            .setTitle("Missing argument: >reminder<")
-            .addField("Correct usage:", "`>reminder` <time> <your_reminder> ( for example >reminder 60 upload memes )")
-            .setFooter("For more info use `>info-reminder`");
+            .setTitle("Missing argument: .reminder<")
+            .addField("Correct usage:", "`.reminder` <time> <your_reminder> ( for example >reminder 60 upload memes )")
+            .setFooter("For more info use `.info-reminder`");
             message.channel.send(HELPembed);
          }
       } else if(!args[0]){
          const HELPembed3 = new Discord.MessageEmbed()
          .setColor(0xFF0000)
-         .setTitle("Missing Argument: >time<")
-         .addField("Correct usage:", "`>reminder` <time> <your_reminder> ( <time> in minutes! )")
-         .setFooter("For more info use `>info-reminder`");
+         .setTitle("Missing Argument: .time<")
+         .addField("Correct usage:", "`.reminder` <time> <your_reminder> ( <time> in minutes! )")
+         .setFooter("For more info use `.info-reminder`");
          message.channel.send(HELPembed3);
       } else if(t1 != t1){
          const HELPembed2 = new Discord.MessageEmbed()
          .setColor(0xFF0000)
          .setTitle("Please enter a valid number")
-         .addField("Correct usage:", "`>reminder` <time> <your_reminder> ( <time> in minutes! )")
-         .setFooter("For more info use `>info-reminder`");
+         .addField("Correct usage:", "`.reminder` <time> <your_reminder> ( <time> in minutes! )")
+         .setFooter("For more info use `.info-reminder`");
          message.channel.send(HELPembed2);
       };
    },

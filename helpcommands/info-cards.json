@@ -1,0 +1,8 @@
+{
+   "common": [".rick"],
+   "uncommon": [".rick2"],
+   "rare": [".suscard", ".mememan", ".zoom", ".rick3"],
+   "epic": [".matt"],
+   "legendary": [".giorno", ".duo"],
+   "mythic": [".uno", ".communism", ".ger"]
+}

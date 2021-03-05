@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Info command", "bruh wtf u doin here")
-        .addField("Usage:", "`>info`")
+        .addField("Usage:", "`.info`")
         .setTimestamp();
         
         message.channel.send(embed);

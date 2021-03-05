@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Online command", "Shows the number of online members in this server")
-        .addField("Usage:", "`>online`")
+        .addField("Usage:", "`.online`")
         .setTimestamp();
         
         message.channel.send(embed);

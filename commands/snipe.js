@@ -12,23 +12,16 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor(0xFF0000)
             .addField('Sniping...', "You sucessfully snip- _**Wait, WHAT?!**_ " + user.toString() + " has a reverse card! You got sniped back sorry for that bro");
-
-            let msg = message.channel.send(embed).then(messageReaction => {
-               messageReaction.react('696302147653861387');
-            });
+            let msg = message.channel.send(embed).then(messageReaction => messageReaction.react('696302147653861387'));
          } else if (d > 0.55){
             const embed = new Discord.MessageEmbed()
             .setColor(0x00FF00)
             .addField('Sniping...', "You sucessfully sniped " + user.toString());
-
-            let msg = message.channel.send(embed).then(messageReaction => {
-               messageReaction.react('700762868278231070');
-            });
+            let msg = message.channel.send(embed).then(messageReaction => messageReaction.react('700762868278231070'));
          } else {
             const embed = new Discord.MessageEmbed()
             .setColor(0x0000FF)
             .addField('Sniping...', "YIKES " + message.author.username + " scored a critical hit on " + user.toString() + "!");
-
             let msg = message.channel.send(embed).then(messageReaction => {
                messageReaction.react('730453087046860811');
                messageReaction.react('696301297372102726');

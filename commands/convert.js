@@ -18,7 +18,7 @@ module.exports = {
             .setColor(0xFF0000)
             .setTitle("Error:")
             .setDescription("Invalid <type> argument")
-            .setFooter('Use >info-convert for more info');
+            .setFooter('Use .info-convert for more info');
             return embed;
          };
       };

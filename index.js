@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = "NzE0MTE5NzQwOTcyNTk3MzE4.XsqB1Q.rZgo4avnMSgj7LAvWgS45wUOY0I";
-const prefix = '>';
+const prefix = '.';
 
 //client
 
 client.on('ready', () => {
    console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity('>info', { type: 'WATCHING' }).catch(console.error);
+   client.user.setActivity('.info', { type: 'WATCHING' }).catch(console.error);
 });
 
 //welcomes and goodbyes
@@ -27,8 +27,7 @@ client.on('guildMemberRemove', member =>{
 // commands
 
 const fs = require('fs');
-const fileGroups = ["commands", "helpcommands", "cards"],
-   files = {};
+const fileGroups = ["commands", "helpcommands", "cards"], files = {};
 client.commands = new Discord.Collection();
 
 for (const group of fileGroups){
@@ -47,7 +46,7 @@ client.on('message', message => {
    if (!client.commands.has(command)) return;
 
    try {
-      client.commands.get(command).execute(message, args)
+      client.commands.get(command).execute(message, args);
    }
    catch (error) {
       console.error(error);

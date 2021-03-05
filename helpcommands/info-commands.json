@@ -1,0 +1,5 @@
+{
+   "reg": [".clap" , ".creator", ".calculate", ".dates", ".dm", ".fight", ".hack", ".howgay", ".insult", ".iq", ".number", ".online", ".poll", ".pp", ".quiz", ".reminder", ".repeat", ".servercount", ".serverinfo", ".snipe", ".spoiler", ".sup", ".userinfo", ".weather", ".convert"],
+   "media": [".alia", ".awaken", ".coinflip", ".meme", ".muda", ".sus"],
+   "admin": [".ban", ".clear", ".kick"]
+}

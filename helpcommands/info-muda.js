@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Muda command", "Sends a random muda scene from JoJo's Bizarre Adventure.")
-        .addField("Usage:", "`>muda`")
+        .addField("Usage:", "`.muda`")
         .setTimestamp();
         
         message.channel.send(embed);

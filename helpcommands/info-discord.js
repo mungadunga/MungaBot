@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Discord command", "Sends the link to some servers you might like ( including the bot's official one )")
-        .addField("Usage:", "`>discord`")
+        .addField("Usage:", "`.discord`")
         .setTimestamp();
         
         message.channel.send(embed);

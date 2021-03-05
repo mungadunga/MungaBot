@@ -8,8 +8,8 @@ module.exports = {
       if(!args[0]){
          const embedHELP = new Discord.MessageEmbed()
          .setColor(0xFF0000)
-         .addField("Correct usage:", "`>spoiler` <...>")
-         .setFooter("For more info use `>info-spoiler`");
+         .addField("Correct usage:", "`.spoiler` <...>")
+         .setFooter("For more info use `.info-spoiler`");
          message.channel.send(embedHELP);
       } else {
          message.delete();

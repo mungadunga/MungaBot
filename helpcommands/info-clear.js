@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Clear command", "People spamming in your server? Use this command to delete up to 100 messages! ( You need the ADMINISTRATOR permission in order to use this command )")
-        .addField("Usage:", "`>clear` <number> ( Limit: 100 messages )")
+        .addField("Usage:", "`.clear` <number> ( Limit: 100 messages )")
         .setTimestamp();
         
         message.channel.send(embed);

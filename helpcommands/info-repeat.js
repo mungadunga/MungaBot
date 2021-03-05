@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Repeat command", "Use MungaBot to say something!")
-        .addField("Usage:", "`>repeat` <anything> ( for example `>repeat` NANI?! )")
+        .addField("Usage:", "`.repeat` <anything> ( for example `.repeat` NANI?! )")
         .setTimestamp();
         
         message.channel.send(embed);

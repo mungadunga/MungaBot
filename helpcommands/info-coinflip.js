@@ -8,7 +8,7 @@ module.exports = {
 
         .setColor(0x7A7B80)
         .addField("Coinflip command", "Not knowing how to settle an argument? Toss a coin!")
-        .addField("Usage:", "`>coinflip`")
+        .addField("Usage:", "`.coinflip`")
         .setTimestamp();
         
         message.channel.send(embed);

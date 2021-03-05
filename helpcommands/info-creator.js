@@ -7,8 +7,8 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
 
         .setColor(0x7A7B80)
-        .addField("Creator command", "Hmm... Who created almighty MungaBot? Use `>creator` to find out!")
-        .addField("Usage:", "`>creator`")
+        .addField("Creator command", "Hmm... Who created almighty MungaBot? Use `.creator` to find out!")
+        .addField("Usage:", "`.creator`")
         .setTimestamp();
         
         message.channel.send(embed);

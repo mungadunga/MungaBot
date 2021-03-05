@@ -3,7 +3,7 @@ module.exports = {
    description: "bans a member",
    guildOnly: true,
    execute(message, args){
-      const prefix = '>'
+      const prefix = '.'
       if (message.content.startsWith(`${prefix}ban`)) {
          let member = message.mentions.members.first();
          member.ban().then((member) => {
