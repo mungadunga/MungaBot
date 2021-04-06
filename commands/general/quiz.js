@@ -2,7 +2,7 @@ module.exports = {
    name: 'quiz',
    description: "quiz command",
    execute(message, args){
-      const quiz = require('./quiz.json');
+      const quiz = require('../quiz.json');
       const item = quiz[Math.floor(Math.random() * quiz.length)];
       const filter = response => item.answers.some(answer => answer.toLowerCase() === response.content.toLowerCase());
 

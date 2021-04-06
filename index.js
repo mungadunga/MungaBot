@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const token = "NzE0MTE5NzQwOTcyNTk3MzE4.XsqB1Q.rZgo4avnMSgj7LAvWgS45wUOY0I";
 const prefix = '.';
 
-//client
+// status
 
 client.on('ready', () => {
    console.log(`Logged in as ${client.user.tag}!`);
@@ -12,7 +12,7 @@ client.on('ready', () => {
 
 //welcomes and goodbyes
 
-client.on('guildMemberAdd', member =>{
+client.on('guildMemberAdd', member => {
    const channel = member.guild.channels.cache.find(channel => channel.id == "666363740349792303" || channel.id == "724904900651122723");
    if(!channel) return;
    
@@ -38,31 +38,32 @@ client.on('guildMemberRemove', member =>{
 
 // commands
 
-const fs = require('fs');
-const fileGroups = ["commands", "helpcommands", "cards"], files = {};
 client.commands = new Discord.Collection();
+const fs = require('fs');
+const commandFolders = fs.readdirSync('./commands');
 
-for (const group of fileGroups){
-   files[group] = fs.readdirSync(`./${group}/`).filter(file => file.endsWith('.js'));
-   for(const file of files[group]){
-      const command = require(`./${group}/${file}`);
-      client.commands.set(command.name, command);
-   }
+for (const folder of commandFolders) {
+	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
+	for (const file of commandFiles) {
+		const command = require(`./commands/${folder}/${file}`);
+		client.commands.set(command.name, command);
+	}
 }
+
+// client.on
 
 client.on('message', message => {
    const args = message.content.slice(prefix.length).split(/ +/);
-   const command = args.shift().toLowerCase();
+   const commandName = args.shift().toLowerCase();
+   const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 
    if(!message.content.startsWith(prefix) || message.author.bot) return;
-   if (!client.commands.has(command)) return;
+   if (!command) return;
 
-   try {
-      client.commands.get(command).execute(message, args);
-   }
+   try { command.execute(message, args) }
    catch (error) {
       console.error(error);
-      message.reply('there was an error trying to execute that command!');
+      message.reply('There was an error trying to execute that command!');
    };
 });
 
