@@ -3,7 +3,7 @@ module.exports = {
    description: 'only munga himself can use this command',
    execute(message, args){
       const Discord = require('discord.js');
-      let version = '7.1.0'; 
+      let version = '7.2.0'; 
 
       const embed = new Discord.MessageEmbed()
       .setColor(0x0000FF)
